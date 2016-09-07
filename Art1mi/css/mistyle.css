@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+.bd{ width:1226px; font:12px/1 "微软雅黑，宋体"; margin:0 auto; }
+.header{ width:100%;}
+/*头部 上层*/
+.header .topbar{ width:100%; height:40px; background:#333; line-height:40px;} 
+.header .topbar a{ color:#b0b0b0;}
+/*头部 左导航*/
+.header .topbar .topbar-nav{ width:70%;}
+.header .topbar .topbar-nav a{display:inline-block;}
+.header .topbar .topbar-nav span{ display:inline-block; width:2px; height:13px; background:#423d39; margin:0 7px; line-height:13px;}
+/*头部 购物车 */
+.header .topbar .cart{ width:120px; text-align:center; background:#424242;}
+.header .topbar .cart .icon{ background:url(../images/xiaomi-icon24.png) no-repeat; width:19px; height:14px; display:inline-block; margin-right:5px;}
+/*头部 登录框 */
+.header .topbar .topbar-info{ margin-right:15px;}
+.header .topbar .topbar-info a{ display:inline-block; line-height:13px;}
+.header .topbar .topbar-info span{ display:inline-block; width:2px; height:13px; background:#423d39; margin:0 5px; line-height:13px;}
+/*头部 导航 第二层 */
+.header .nav{height:55px;padding-top:23px; padding-bottom:22px; }
+.header .nav .wrapper{ height:55px;}
+/*头部 导航 左边 */
+.header .nav .left{ width:230px;}
+/*头部 导航 中间*/
+.header .nav .middle{ width:700px; position:relative;}
+.header .nav .middle .list{}
+.header .nav .middle .list li{ float:left; padding:0 16px; text-align:center; line-height:55px; font-size:16px;}
+.header .nav .middle .list li a{ width:100%; height:100%; color:#743354;}
+.header .nav .middle .list li.on a{ color:#F60;}
+
+/*选项卡*/
+.header .nav .middle .sublist-wrapper{ width:1226px; height:0px;background:#0FF; display:block; position:absolute; left:-230px; top:55px;-webkit-border-radius: 10px;-webkit-border-radius: 10px;-moz-border-radius-bottomright: 10px;-moz-border-radius: 10px;border-radius: 10px;border-radius: 10px;
+ ;  z-index:111; overflow:hidden;}
+.header .nav .middle .sublist-wrapper .sublistul{padding: 20px 10px;height:160px;}
+.header .nav .middle .sublist-wrapper .show{ display:block; }
+.header .nav .middle .sublist-wrapper .sublistul li{ width:300px; height:160px; margin:0 50px; font-size:20px; line-height:16px; border-radius:50px;  float:left; text-align:center; background:green;}
+.header .nav .middle .sublist-wrapper .sublistul li img{ width:100px; height:80px; margin:30px 100px 10px; border-radius:30%;}
+.header .nav .middle .sublist-wrapper .sublistul li a{ color:#fff;}
+
+/*头部 导航 右边*/
+.header .nav .right{ position:relative; width:296px;}
+.header .nav .right .ipt{ width:243px; height:48px; border:1px solid #e0e0e0; margin-top:4px; }
+.header .nav .right .span{ left:130px; top:24px; position:absolute;}
+.header .nav .right .span span{ background:#eeeeee; padding:4px;}
+.header .nav .right .span span:hover{ background:#f60; color:#fff;}
+.header .nav .right .btn{ width:50px; height:48px; display:inline-block; border:1px solid #e0e0e0; border-left:none; position:absolute; top:4px; right:0px; background:url(../images/xiaomi-icon8.png) 50% 50% no-repeat; }
+/*头部 第三层 目录  左边*/
+.header .menu .subnav{ width:234px; border-top:1px solid #666666; background:#66604e; position:relative;}
+.header .menu .subnav .list{ padding:19px 0px 19px 0px;}
+.header .menu .subnav .list li{ height:42px; line-height:42px; position:relative; padding-left:24px; padding-right:29px;}
+.header .menu .subnav .list li.on{ background:#f60;}
+.header .menu .subnav .list li a{ width:181px; color:#fff; display:inline-block;}
+.header .menu .subnav .list li a .icon{ background:url(../images/xiaomi-icon9.png); width:8px; height:12px; position:absolute; top:13px; right:29px;}
+/*选项卡*/
+
+.header .menu .subnav .subnav_content{ height:459px; position:absolute; left:234px; top:0px; z-index:32}
+.header .menu .subnav .subnav_content .subdiv{ display:none; width:628px;}
+.header .menu .subnav .subnav_content .subdiv.show{ display:block;}
+
+/*内部的样式*/
+.header .menu .subnav .subnav_content .subdiv .sublist{ padding:0px 20px;background:#fff; width:274px; height:459px;}
+.header .menu .subnav .subnav_content .subdiv .sublist li{ width:234px; height:42px; line-height:20px; margin:10px 0;}
+.header .menu .subnav .subnav_content .subdiv .sublist li a img{ display:inline-block;}
+.header .menu .subnav .subnav_content .subdiv .sublist li a:hover{ color:red;}
+.header .menu .subnav .subnav_content .subdiv .sublist li a.suba{ display:inline-block; border:1px solid #000; margin-top:10px; margin-right:10px; padding:0 10px;}
+.header .menu .subnav .subnav_content .subdiv .sublist li a.suba:hover{ color:#fff; background:red;}
+
+
+/*头部 目录  右边*/
+.header .menu .menu-right{ width:992px; height:445px; position:relative;}
+.header .menu .menu-right img{ opacity:0; width:992px; height:459px; position:absolute; left:0px; top:0px;}
+.header .menu .menu-right img.show{  opacity:1;}
+.header .menu .menu-right .img-l{ display:inline-block; position:absolute; left:10px; top:214px; width:16px; height:30px; background:url(../images/xiaomi-icon10.png); z-index:2}
+.header .menu .menu-right .img-r{ display:inline-block; position:absolute; right:10px; top:214px;width:16px; height:30px; background:url(../images/xiaomi-icon11.png); z-index:2}
+.header .menu .menu-right .list{ width:100px; height:10px; position:absolute; right:25px; bottom:10px;}
+.header .menu .menu-right .list li{ float:left;}
+.header .menu .menu-right .list li a{ width:10px; height:10px; background: url(../images/xiaomi-icon21.png) no-repeat; margin-right:10px; display:inline-block; }
+.header .menu .menu-right .list li a.active{ background: url(../images/xiaomi-icon23.png) no-repeat;}
+
+
+/*头部 底部 */
+.header .bottombar{ margin-top:14px;}
+.header .bottombar .list li{float:left;  margin-right:14px;width:316px; height:170px; }
+.header .bottombar .list li.first{ width:234px;}
+.header .bottombar .list li.last{margin-right:0px;}
+
+.header .bottombar .list li.first .bottombar-list{ width:234px;}
+.header .bottombar .list li.first .bottombar-list li{ width:75px; height:32px; float:left; background:#5f5750; margin-right:0px; text-align:center;padding-top:52px; position:relative;}
+.header .bottombar .list li.first .bottombar-list li a{width:75px; height:32px; color:#cfcdcb; display:inline-block;}
+.header .bottombar .list li.first .bottombar-list li:hover a{ color:#fff;}
+.header .bottombar .list li.first .bottombar-list li a i{ position:absolute; left:30px; top:24px;}
+.header .bottombar .list li.first .bottombar-list li a i{ display:inline-block; width:25px; height:25px;}
+.header .bottombar .list li.first .bottombar-list li a i.dianxin{ background:url(../images/xiaomi-icon1.png) no-repeat;}
+.header .bottombar .list li.first .bottombar-list li a i.qiye{ background:url(../images/xiaomi-icon3.png) no-repeat;}
+.header .bottombar .list li.first .bottombar-list li a i.guanfan{  background:url(../images/xiaomi-icon4.png) no-repeat;}
+.header .bottombar .list li.first .bottombar-list li a i.xiaomi{ background:url(../images/xiaomi-icon5.png) no-repeat;}
+.header .bottombar .list li.first .bottombar-list li a i.huafei{ background:url(../images/xiaomi-icon6.png) no-repeat;}
+.header .bottombar .list li.first .bottombar-list li a i.fangwei{ background:url(../images/xiaomi-icon7.png) no-repeat;}
+/*内容 单品 */
+.content{ background:#f5f5f5; padding-bottom:60px;}
+.content .danpin .title{ height:41px; padding-top:44px; position:relative;}
+.content .danpin .title .h3{ font-size:22px; color:#333;}
+.content .danpin .title .control{ position:absolute; right:0px; top:51px;}
+.content .danpin .title .control a{ width:34px; height:22px; float:left; text-align:center; line-height:22px; border:1px solid #e0e0e0; border-right:none; color:#b0b0b5;}
+
+
+.content .danpin .content{ width:1226px; height:382px; overflow:hidden;}
+.content .danpin .content .content-wrapper{ width:4904px;}
+.content .danpin .content .list{ float:left;}
+.content .danpin .content .list.show{ display:block;}
+.content .danpin .content .list li{ position:relative; width:234px; border-top:1px solid #ffac13; text-align:center; float:left; margin-right:14px; padding-bottom:82px; background:#fff;}
+.content .danpin .content .list li.last{ margin-right:0px;}
+.content .danpin .content .list li h3{ color:#212121;}
+.content .danpin .content .list li .show{ color:#bcbcd3; margin-top:11px; margin-bottom:20px;}
+.content .danpin .content .list li .price{ color:#ff6709;}
+.content .danpin .content .list li div{ border:1px solid #ccc; position:absolute; left:100px; top:0px; background:red ; width:100px; height:100px;}
+
+/*内容 硬件 */
+.content .yingjian{background:#f5f5f5; }
+.content .yingjian .title{ height:40px; padding-top:78px; position:relative;}
+.content .yingjian .title h3{ font-size:22px; color:#333;}
+.content .yingjian .title .control{ color:#424242; font-size:16px; position:absolute;  right:0px; top:78px; line-height:23px;}
+.content .yingjian .title .control:hover{ color:#f60;}
+.content .yingjian .title .control:hover .icon{ background:#f60;}
+.content .yingjian .title .control .icon{ display:inline-block; width:20px; height:23px; color:#f5f5f5; background:#b0b0b0; border-radius:45px; text-align:center; line-height:23px; font-style:normal;}
+
+.content .yingjian .wrapper{ overflow:hidden;}
+.content .yingjian .left{ margin-top:-13px;transition:all .4s linear; }
+.content .yingjian .left:hover{ transform: translateY(-10px); box-shadow:0px 5px 5px 5px #0CC ;}
+
+.content .yingjian .content{ margin-top:-14px; width:992px; line-height:12px;}
+.content .yingjian .content .list li{ width:234px;  text-align:center; float:left; margin-left:14px; margin-top:14px; padding-bottom:34px; background:#fff;transition:all .4s linear;}
+.content .yingjian .content .list li:hover{ transform: translateY(-10px); box-shadow:0px 5px 5px 5px #0CC ;}
+.content .yingjian .content .list li h3 a{ color:#212121; line-height:12px; font-size:12px;}
+.content .yingjian .content .list li .show{ color:#bcbcd3; margin-top:9px; margin-bottom:17px;}
+.content .yingjian .content .list li .price{ color:#ff6709;}
+/*内容 搭配 */
+.content .dapei{background:#f5f5f5;}
+.content .dapei .title{ height:40px; padding-top:78px; position:relative;}
+.content .dapei .title h3{ font-size:22px; color:#333; }
+.content .dapei .title .control{ color:#424242; font-size:16px; position:absolute;  right:0px; top:78px; line-height:23px;}
+.content .dapei .title .control li{ float:left; position: relative; margin-right:30px;}
+
+.content .dapei .title .control .icon{ display:inline-block; width:100%; height:2px; color:#f5f5f5; background:#ff6700;  position:absolute; left:0px; bottom:-5px; display:none;}
+.content .dapei .title .control li:hover .icon{ display:block;}
+.content .dapei .title .control li:hover a{ color:#ff6700;}
+
+.content .dapei .wrapper{ overflow:hidden;}
+.content .dapei .wrapper .left .last{ display:inline-block; margin-top:14px;}
+.content .dapei .wrapper .left{ transition:all .4s linear;}
+.content .dapei .wrapper .left:hover{ transform: translateY(-10px); box-shadow:0px 5px 5px 5px #0CC ;}
+
+.content .dapei .content{ margin-top:-14px; width:992px;  line-height:12px;}
+.content .dapei .content .list li{ width:234px;  text-align:center; float:left; margin-left:14px; margin-top:14px; padding-bottom:32px; background:#fff; transition:all .4s linear; overflow:hidden; position:relative;}
+.content .dapei .content .list li:hover{ transform:translateY(-10px); box-shadow:0px 5px 5px 5px #0CC;}
+.content .dapei .content .list li h3 a{ color:#212121; line-height:12px; font-size:12px; }
+.content .dapei .content .list li .show{ color:#bcbcd3; }
+.content .dapei .content .list li .price{ color:#ff6709;margin-top:9px; margin-bottom:17px; }
+
+.content .dapei .content .list li .subli{ padding-top:45px; padding-left:30px; text-align:left; padding-bottom:28px; position:relative;}
+.content .dapei .content .list li .subli .subprice{ margin-top:15px; color:#ff6700;}
+.content .dapei .content .list li .subli h3 a{ color:#743333;}
+.content .dapei .content .list li .subli h3 a .icon{ position:absolute; left:140px; top:45px; width:66px; height:60px; background:url(../images/xiaomi-icon0.png) no-repeat;}
+.content .dapei .content .list li .more{ padding-top:45px; padding-left:30px; text-align:left; padding-bottom:35px; position:relative;}
+.content .dapei .content .list li .more p{ color:#757575; margin-top:8px; }
+.content .dapei .content .list li .more h3 a{ color:#333;font-size:18px;}
+.content .dapei .content .list li .more h3 a .icon{ position:absolute; left:150px; top:45px; width:49px; height:48px; background:url(../images/xiaomi-icon2.png) no-repeat;}
+.content .dapei .content .list li .review-wrapper{ width:100%; height:90px; background:green; position:absolute; left:0px; bottom:-110px; padding-top:20px; line-height:14px;}
+.content .dapei .content .list li .review-wrapper span{ display:block; color:#fff; font-size:14px; line-height:16px; margin-bottom:20px;}
+
+/*内容 配件 */
+.content .peijian{background:#f5f5f5;}
+.content .peijian .title{ height:40px; padding-top:78px; position:relative;}
+.content .peijian .title h3{ font-size:22px; color:#333; }
+.content .peijian .title .control{ color:#424242; font-size:16px; position:absolute;  right:0px; top:78px; line-height:23px;}
+.content .peijian .title .control li{ float:left; position: relative; margin-right:30px;}
+.content .peijian .title .control .icon{ display:inline-block; width:100%; height:2px; color:#f5f5f5; background:#ff6700;  position:absolute; left:0px; bottom:-5px; display:none;}
+.content .peijian .title .control li:hover .icon{ display:block;}
+.content .peijian .title .control li:hover a{ color:#ff6700;}
+
+.content .peijian .wrapper{ }
+.content .peijian .wrapper .left .last{ display:inline-block; margin-top:14px;}
+.content .peijian .wrapper .left{ transition:all .4s linear;}
+.content .peijian .wrapper .left:hover{ transform:translateY(-10px); box-shadow:0px 5px 5px 5px #0CC;}
+
+.content .peijian .content{ margin-top:-14px; width:992px;  line-height:12px;}
+.content .peijian .content .list li{ width:234px;  text-align:center; float:left; margin-left:14px; margin-top:14px; padding-bottom:32px; background:#fff; transition:all .4s linear;}
+.content .peijian .content .list li:hover{ transform:translateY(-10px); box-shadow:0px 5px 5px 5px #0CC;}
+.content .peijian .content .list li h3 a{ color:#212121; line-height:12px; font-size:12px; }
+.content .peijian .content .list li .show{ color:#bcbcd3; }
+.content .peijian .content .list li .price{ color:#ff6709;margin-top:8px; margin-bottom:17px; }
+
+.content .peijian .content .list li .subli{ padding-top:45px; padding-left:30px; text-align:left; padding-bottom:28px; position:relative;}
+.content .peijian .content .list li .subli .subprice{ margin-top:15px; color:#ff6700;}
+.content .peijian .content .list li .subli h3 a{ color:#743333;}
+.content .peijian .content .list li .subli h3 a .icon{ position:absolute; left:140px; top:45px; width:55px; height:71px; background:url(../images/xiaomi.peijian_25.png) no-repeat;}
+.content .peijian .content .list li .more{ padding-top:45px; padding-left:30px; text-align:left; padding-bottom:35px; position:relative;}
+.content .peijian .content .list li .more p{ color:#757575; margin-top:8px; }
+.content .peijian .content .list li .more h3 a{ color:#333;font-size:18px;}
+.content .peijian .content .list li .more h3 a .icon{ position:absolute; left:150px; top:45px; width:49px; height:48px; background:url(../images/xiaomi-icon2.png) no-repeat;}
+
+
+/*内容 周边 */
+
+.content .zhoubian{background:#f5f5f5;}
+.content .zhoubian .title{ height:40px; padding-top:78px; position:relative;}
+.content .zhoubian .title h3{ font-size:22px; color:#333; }
+.content .zhoubian .title .control{ color:#424242; font-size:16px; position:absolute;  right:0px; top:78px; line-height:23px;}
+.content .zhoubian .title .control li{ float:left; position: relative; margin-right:30px;}
+.content .zhoubian .title .control .icon{ display:inline-block; width:100%; height:2px; color:#f5f5f5; background:#ff6700;  position:absolute; left:0px; bottom:-5px; display:none;}
+.content .zhoubian .title .control li:hover .icon{ display:block;}
+.content .zhoubian .title .control li:hover a{ color:#ff6700;}
+
+.content .zhoubian .wrapper{}
+.content .zhoubian .wrapper .left .last{ display:inline-block; margin-top:14px;}
+.content .zhoubian .wrapper .left{ transition:all .4s linear;}
+.content .zhoubian .wrapper .left:hover{ transform:translateY(-10px); box-shadow:0px 5px 5px 5px #0CC;}
+
+.content .zhoubian .content{ margin-top:-14px; width:992px;  line-height:12px;}
+.content .zhoubian .content .list li{ width:234px;  text-align:center; float:left; margin-left:14px; margin-top:14px; padding-bottom:32px; background:#fff; transition:all .4s linear;}
+.content .zhoubian .content .list li:hover{ transform:translateY(-10px); box-shadow:0px 5px 5px 5px #0CC;}
+.content .zhoubian .content .list li h3 a{ color:#212121; line-height:12px; font-size:12px; }
+.content .zhoubian .content .list li .show{ color:#bcbcd3; }
+.content .zhoubian .content .list li .price{ color:#ff6709; margin-top:9px; margin-bottom:17px;}
+.content .zhoubian .content .list li .price span{ text-decoration:line-through; color:#b0b0b0;}
+
+
+.content .zhoubian .content .list li .subli{ padding-top:45px; padding-left:30px; text-align:left; padding-bottom:28px; position:relative;}
+.content .zhoubian .content .list li .subli .subprice{ margin-top:15px; color:#ff6700;}
+.content .zhoubian .content .list li .subli h3 a{ color:#743333;}
+.content .zhoubian .content .list li .subli h3 a .icon{ position:absolute; left:140px; top:45px; width:40px; height:66px; background:url(../images/xiaomi-zhoubian_3.png) no-repeat;}
+.content .zhoubian .content .list li .more{ padding-top:45px; padding-left:30px; text-align:left; padding-bottom:35px; position:relative;}
+.content .zhoubian .content .list li .more p{ color:#757575; margin-top:8px; }
+.content .zhoubian .content .list li .more h3 a{ color:#333;font-size:18px;}
+.content .zhoubian .content .list li .more h3 a .icon{ position:absolute; left:150px; top:45px; width:49px; height:48px; background:url(../images/xiaomi-icon2.png) no-repeat;}
+
+
+
+
+/*内容 推荐 */
+
+.content .tuijian{ background:#f5f5f5;}
+.content .tuijian .title{ height:41px; padding-top:44px; position:relative;}
+.content .tuijian .title .h3{ font-size:22px; color:#333;}
+.content .tuijian .title .control{ position:absolute; right:0px; top:51px;}
+.content .tuijian .title .control a{ width:34px; height:22px; float:left; text-align:center; line-height:22px; border:1px solid #e0e0e0; border-right:none; color:#b0b0b5;}
+
+.content .tuijian .content .list li{ width:234px;text-align:center; float:left; margin-right:14px; padding-bottom:24px; background:#fff;}
+.content .tuijian .content .list li.last{ margin-right:0px;}
+.content .tuijian .content .list li h3{ color:#212121;}
+.content .tuijian .content .list li .show{ color:#bcbcd3;}
+.content .tuijian .content .list li .price{ color:#ff6709; margin-top:11px; margin-bottom:20px;}
+
+/*内容 热评 */
+
+.content .reping .title{ height:41px; padding-top:44px; position:relative;}
+.content .reping .title .h3{ font-size:22px; color:#333;}
+
+.content .reping{}
+.content .reping .content{}
+.content .reping .content .list li{ float: left; width:296px; margin-right:14px;}
+.content .reping .content .list li.last{ margin-right:0;}
+.content .reping .content .list li .wrapper{ padding-left:29px; padding-right:42px; width:225px; background:#fff; padding-top:29px; padding-bottom:33px;}
+.content .reping .content .list li .wrapper .show{ margin-bottom:7px; line-height:21px; font-size:14px;}
+.content .reping .content .list li .wrapper .show a{ color:#333;}
+.content .reping .content .list li .wrapper .tell{ color:#b0b0b0; margin-bottom:23px;}
+.content .reping .content .list li .wrapper h3{ line-height:15px;}
+.content .reping .content .list li .wrapper h3 a span{ color:#ff6700; border-left:2px solid #f0e7e0; padding-left:9px; margin-left:8px;}
+
+
+/*内容 内容 */
+
+
+.content .nei .title{ height:41px; padding-top:44px; position:relative;}
+.content .nei .title h3 a{ font-size:22px; color:#333;}
+
+.content .nei .subnei .list li{ background:#fff; width:296px; text-align:center; padding-bottom:74px; position:relative; float:left; margin-right:14px;}
+.content .nei .subnei .list li.last{ margin-right:0px;}
+.content .nei .subnei .list li h3{ padding-top:49px; padding-bottom:26px; color:#ffb813; font-size:16px; line-height:20px;}
+
+
+.content .nei .subnei .list li .subnei-subul-wrapper{overflow:hidden; position:relative; width:296px; height:323px;}
+.content .nei .subnei .list li .subnei-subul{  width:1184px; position:absolute;left:0px; top:0px;}
+.content .nei .subnei .list li .subnei-subul li{ float:left; margin-right:0px;}
+.content .nei .subnei .list li .subnei-subul li .tell{ font-size:18px; line-height:20px;}
+.content .nei .subnei .list li .subnei-subul li .tell a{ color:#333;}
+.content .nei .subnei .list li .subnei-subul li .show{ width:192px; line-height:20px; margin:0 auto; color:#cebbc5;}
+.content .nei .subnei .list li .subnei-subul li .price{ color:#333; margin-top:15px; }
+.content .nei .subnei .list li .subnei-subul li img{ width:296px; height:162px; display:inline-block;}
+
+.content .nei .subnei .list li .sublist{ width:138px; height:10px; position:absolute; bottom:24px; left:92px}
+.content .nei .subnei .list li .sublist li{width:10px; height:10px; float:left; margin-right:24px;  background:url(../images/xiaomi-icon13.png) 50% 50% no-repeat; padding-bottom:0px;}
+.content .nei .subnei .list li .sublist li.active{ background:url(../images/xiaomi-icon12.png) no-repeat 50% 50%;}
+.content .nei .subnei .list li .sublist li a{ float:left;width:10px; height:10px;}
+
+.content .nei .subnei .list li .sublistnav{ position:relative;}
+.content .nei .subnei .list li .sublistnav a{ position:absolute; right:0px; top:-180px; width:20px; height:60px; background:#ccc; color:#fff; text-align:center; line-height:60px; font-size:24px;}
+.content .nei .subnei .list li .sublistnav a.left{ left:0px; top:-180px;};
+
+
+
+
+/*内容 视频 */
+.content .video{background:#f5f5f5; }
+.content .video .title{ height:40px; padding-top:78px; position:relative;}
+.content .video .title h3{ font-size:22px; color:#333;}
+.content .video .title .control{ color:#424242; font-size:16px; position:absolute;  right:0px; top:78px; line-height:23px;}
+.content .video .title .control:hover{ color:#f60;}
+.content .video .title .control:hover .icon{ background:#f60;}
+.content .video .title .control .icon{ display:inline-block; width:20px; height:23px; color:#f5f5f5; background:#b0b0b0; border-radius:45px; text-align:center; line-height:23px; font-style:normal;}
+
+.content .video .subvideo .list{}
+.content .video .subvideo .list li{ width:296px; float:left; text-align:center; background:#fff; margin-right:14px;}
+.content .video .subvideo .list li.last{ margin-right:0px;}
+.content .video .subvideo .list li .shipin{ position:relative; height:180px;}
+.content .video .subvideo .list li .shipin a .icon{ position:absolute; left:20px; bottom:9px; width:36px; height:24px; border:2px solid #fff; background:#1e2b34; border-radius:45px; color:#fff; text-align:center; line-height:24px; }
+.content .video .subvideo .list li h3{ padding-top:33px; padding-bottom:12px; color:#333; line-height:13px;}
+.content .video .subvideo .list li p{ color:#b0b0b0; padding-bottom:36px;}
+/* 页尾 */
+.footer{width:100%;}
+/* 页尾 顶部 */
+.footer .tab{ padding:27px 0px;}
+.footer .tab .list li{ float:left; text-align:center; width:244px; background:#fff;  border-right:1px solid #e0e0e0;}
+.footer .tab .list li a{font-size:16px; color:#776177; line-height:25px;}
+.footer .tab .list li a .icon{ background:url(../images/xiaomi-icon15.png) no-repeat; width:25px;height:25px; display:inline-block; vertical-align:-7px;}
+/* 页尾 中部 */
+
+.footer .service{ border-top:1px solid #e0e0e0; padding-top:40px; padding-bottom:69px;}
+.footer .service .left{ width:983px;}
+.footer .service .left .list li{ width:164px; float:left;}
+.footer .service .left .list li h3{ padding-top:1px; padding-bottom:15px; color:#424242;}
+.footer .service .left .list li .sublist li{ margin-top:17px; color:#757575; }
+
+.footer .service .right{ width:242px; border-left:1px solid #e0e0e0; text-align:center;}
+.footer .service .right .phone{ font-size:16px; color:#ff6700; margin-bottom:12px;}
+.footer .service .right .time{ color:#616161; margin-bottom:7px;}
+.footer .service .right .tell{ width:118px; height:28px; display:inline-block; margin-top:13px; margin-bottom:3px;color:#ff6700; border:1px solid #ff6700; text-align:center; line-height:28px;}
+.footer .service .right .tell .icon{ background:url(../images/xiaomi-icon20.png) no-repeat; display:inline-block; width:12px; height:11px; margin-right:2px;}
+
+/* 页尾  底部*/
+.footer .bottom{ padding-bottom:30px;}
+.footer .bottom .logo{ width:36px; height:36px;}
+.footer .bottom .logo img{ width:100%; height:100%;}
+.footer .bottom .subnav{padding-left:10px; }
+.footer .bottom .subnav .friendlink{ margin-top:4px; margin-bottom:5px;}
+.footer .bottom .subnav .friendlink a{ float:left; color:#757575; line-height:14px;}
+.footer .bottom .subnav .friendlink a.line{ margin-left:3px; margin-right:4px;}
+.footer .bottom .subnav .copyright{ color:#d3bcbc;}
+.footer .bottom .wangzhan .list li{ width:80px; height:29px; margin-right:10px; float:left;}
+.footer .bottom .wangzhan .list li a .icon1{ width:32px ; height:29px; display:block; background:url(../images/xiaomi-dibu1.png) no-repeat 0px 4px;}
+.footer .bottom .wangzhan .list li a .last{ margin-bottom:2px; margin-top:4px;}
+
+
+
+/*通用属性*/
+.show{ display:block;}
+
+
+

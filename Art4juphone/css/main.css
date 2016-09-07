@@ -1,0 +1,417 @@
+@charset "utf-8";
+/*头部*/
+
+.header{
+}
+img{ width:100%}
+/*首行*/
+.header .topbar{
+	background:-webkit-linear-gradient(#fff,#ebebeb);
+	height:2.5rem;
+	position:relative;
+	overflow:hidden;
+}
+.header .topbar .logo{
+	width:3.7rem;
+	height:1rem;
+	display:block;
+	background:url(../img/2.png);
+	background-size:100%;
+	margin:0.75rem auto;
+	text-indent:-9999em;
+}
+.header .topbar .topbar-btn{
+	width:3.05rem;
+	height:1.45rem;
+	background:url(../img/1.png);
+	background-size:100%;
+	position:absolute;
+	left:0.5rem;
+	top:0.5rem;
+}
+/*banner轮播图*/
+.header .banner .banner-img{
+	overflow:hidden;
+	width:87.125rem;
+	height:8.35rem;
+}
+.header .banner .banner-img li{
+	float:left;
+}
+
+.header .banner .banner-img a{
+	width:17.425rem;
+	height:8.35rem;
+	display:block;
+}
+.header .banner .bannernav-wrapper{
+	margin:0.525rem 0 1.025rem;
+	margin-left:6.875rem	
+}
+.header .banner .bannernav-wrapper .nav li{
+	width:0.25rem;
+	height:0.25rem;
+	background:#a9a9a9;
+	float:left;
+	border-radius:50%;
+	margin-right:0.25rem;
+}
+
+.header .banner .bannernav-wrapper .nav li.active{
+	background:#ff4300;
+}
+/*主题内容*/
+.main{
+	margin:0 0.5rem;
+}
+/*内容导航*/
+.main .main-nav .list{
+	width:15rem;
+	margin:0 0.775rem 0 0.825rem;
+}
+.main .main-nav .list li{
+	float:left;
+	margin-right:1.8rem;
+	height:4rem;
+	width:2rem;
+	font-size:0.6rem;
+	color:#999;
+	text-align:center;
+}
+.main .main-nav .list li:nth-child(4n){
+	margin-right:0px;
+}
+.main .main-nav .list li p{
+	margin-top:0.45rem;
+}
+/*聚划算热卖排行*/
+.main .hot{
+}
+/*聚划算热卖排行 头部*/
+.main .hot .hot-title{
+	margin:0.9rem 0;	
+}
+.main .hot .hot-title .title{
+	border-left:0.1rem solid #d51938;
+	padding-left:0.45rem;
+	font-size:0.7rem;
+	color:#333;
+}
+.main .hot .hot-title .submenu{
+	font-size:0.6rem;
+}
+
+
+
+/*聚划算热卖排行 内容*/
+.main .hot .hot-content{
+	border-top:0.1rem solid #dcdcdc;
+	padding-top:0.775rem;
+}
+.main .hot .hot-content .list li{
+	height:3rem;
+	margin-bottom:0.5rem;
+}
+.main .hot .hot-content .list li div{
+	float:left;
+}
+.main .hot .hot-content .list li .num{
+	width:1.5rem;
+	height:3rem;
+	text-align:center;
+	color:#fff;
+	background:#e00202;
+	font-size:1.2rem;
+	line-height:3rem;
+	
+}
+.main .hot .hot-content .list li .img a{
+	width:4.5rem;
+	height:3rem;
+	display:block;
+}
+
+.main .hot .hot-content .list li .menu{
+	background:#f4f4f4;
+	width:9rem;
+	height:3rem;
+}
+.main .hot .hot-content .list li .menu .sell{
+	width:4.5rem;
+	font-size:0.65rem;
+	color:#999;
+	margin:0.7rem 0 0.475rem 0.5rem;
+}
+.main .hot .hot-content .list li .menu .sell .over{
+	margin-bottom:0.3rem;
+}
+
+.main .hot .hot-content .list li .menu .sell .span1{
+	color:#c7223d;
+	margin-bottom:0.3rem;
+}
+.main .hot .hot-content .list li .menu .sell .span2{
+	text-decoration:line-through;
+}
+
+.main .hot .hot-content .list li .menu .price{
+	line-height:3rem;
+	font-size:0.65rem;
+	color:#d51938;
+	font-weight:bold;
+	width:4rem;
+	text-align:right;
+}
+
+.main .hot .hot-content .list li .menu .price .doller{
+	background:url(../img/reb1.png);
+	width:0.5rem;
+	height:0.65rem;
+	display:inline-block;
+	background-size:100%;
+}
+
+.main .hot .hot-content .list li .menu .price .icon{
+	display:inline-block;
+	width:0.325rem;
+	height:0.55rem;
+	background:url(../img/right1.png);
+	background-size:100%;
+	margin-left:0.5rem;
+	margin-right:0.5rem;
+	
+}
+/*广告位*/
+.main .sellbanner{
+	height:2rem;
+	background:#f5f5f5;
+	text-align:center;
+	line-height:2rem;
+	font-size:0.7rem;
+	color:#666;
+	font-weight:bold;
+}
+
+
+/*生活团*/
+.main .life{
+	margin:0.5rem 0;
+}
+
+.main .life ul li{
+	float:left;
+}
+.main .life ul li.life-img{
+}
+.main .life ul li.life-img a{
+	width:3.75rem;
+	height:8.8rem;
+	display:block;
+}
+.main .life ul li.life-img a img{
+}
+.main .life ul li.life-content ul{
+	width:11.25rem;
+}
+.main .life ul li.life-content ul li a{
+	float:left;
+	width:3.725rem;
+	height:2.2rem;
+	border:0.025rem solid #ccc;
+	box-sizing:border-box;
+	text-align:center;
+	line-height:2.15rem;
+	font-size:0.65rem;
+	color:#999;
+}
+.main .life ul li.life-content ul li a.hot1{
+	color:#d51942;
+}
+/*商品团*/
+.main .goods{
+	margin:0.5rem 0;
+}
+
+.main .goods ul li{
+	float:left;
+}
+.main .goods ul li.goods-img{
+}
+.main .goods ul li.goods-img a{
+	width:3.75rem;
+	height:8.8rem;
+	display:block;
+}
+.main .goods ul li.goods-img a img{
+}
+.main .goods ul li.goods-content ul{
+	width:11.25rem;
+}
+.main .goods ul li.goods-content ul li a{
+	float:left;
+	width:3.725rem;
+	height:2.2rem;
+	border:0.025rem solid #ccc;
+	box-sizing:border-box;
+	text-align:center;
+	line-height:2.15rem;
+	font-size:0.65rem;
+	color:#999;
+}
+.main .goods ul li.goods-content ul li a.hot1{
+	color:#d51942;
+}
+/*品牌团*/
+.main .brand{
+	margin:0.5rem 0;
+}
+
+.main .brand ul li{
+	float:left;
+}
+.main .brand ul li.brand-img{
+}
+.main .brand ul li.brand-img a{
+	width:3.75rem;
+	height:8.8rem;
+	display:block;
+}
+.main .brand ul li.brand-img a img{
+}
+.main .brand ul li.brand-content ul{
+	width:11.25rem;
+}
+.main .brand ul li.brand-content ul li{
+}
+
+.main .brand ul li.brand-content ul li a{
+	display:block;
+	float:left;
+	width:3.725rem;
+	height:2.2rem;
+	border:0.025rem solid #ccc;
+	box-sizing:border-box;
+	text-align:center;
+	line-height:2.15rem;
+	font-size:0.65rem;
+	color:#999;
+}
+.main .brand ul li.brand-content ul li a.hot1{
+	color:#d51942;
+}
+
+
+/*互动区*/
+
+.main .each{
+	margin-top:0.5rem;
+}
+
+.main .each div{
+	float:left;
+	width:5rem;
+	height:4rem;
+	font-size:0.6rem;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+}
+.main .each div span{
+	display:inline-block;
+	margin-top:2.8rem;
+}
+.main .each .apple{
+	background:url(../img/each1.png);
+	background-size:100%;
+}
+.main .each .an{
+	background:url(../img/each2.png);
+	background-size:100%;
+}
+.main .each .proposal{
+	background:url(../img/each3.png);
+	background-size:100%;
+}
+
+/*尾部*/
+.footer{
+	margin-top:0.5rem;
+}
+
+/*尾部登录*/
+.footer .loginbar{
+	height:2.2rem;
+	background:#f8f8f8;
+	margin-left:0.75rem;
+	margin-right:0.7rem;
+	line-height:2.2rem;
+	font-size:0.65rem;
+	color:#333;
+}
+
+.footer .loginbar .login a{
+	display:inline-block;
+	margin-right:1.175rem;
+	color:#333;
+}
+.footer .loginbar .menu .icon{
+	display:inline-block;
+	width:0.425rem;
+	height:0.225rem;
+	background:url(../img/icon-up.png);
+	background-size:100%;
+	margin-left:0.475rem;
+	margin-bottom:0.11rem;
+}
+
+
+/*版本附加区*/
+
+.footer .bottombar{
+	background:#eee;
+	height:3.65rem;
+	text-align:center;
+}
+.footer .bottombar .version{
+	padding-top:1.075rem;
+	margin-bottom:0.775rem;
+}
+.footer .bottombar .version span{
+	font-size:0.7rem;
+	color:#333;
+	
+}
+.footer .bottombar .copy{
+	color:#999;
+	font-size:0.55rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,7 +2,8 @@
 /* CSS Document */
 /*全局*/
 .body{
-	background:#efefef;
+	background:url(../img/bg3.jpg) no-repeat;
+	background-size:100% 100%;
 	width:100%;
 	font-size:16px;
 	font-family:"Microsoft YaHei";

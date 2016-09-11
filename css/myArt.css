@@ -3,11 +3,15 @@
 
 /*我的作品*/
 .page2{
+	background:url(../img/bg6.jpg) no-repeat;
+	background-size:100% 100%;
+	
 }
 
 .page2 .wrapper{
-	margin:20px 130px 0 100px;
+	margin:0px 130px 0 100px;
 	width:1050px;
+	padding:20px 0;
 
 }
 
@@ -65,15 +69,16 @@
 .page2 .right{
 	width:800px;
 	height:600px;
-	background:#BBBAF5;
+
 }
 .page2 .right h3{
 	margin:20px 0;
 	margin-left:100px;
 	display:block;
 	font-size:30px;
-	color:#F00;
+
 	font-weight:bold;
+	text-shadow:0px 0px 20px orange,0px 0px 30px yellow,0px 0px 40px yellow,0px 0px 50px yellow,0px 0px 60px yellow,0px 0px 70px yellow,0px 0px 80px yellow;
 }
 
 .page2 .right .bottombar{

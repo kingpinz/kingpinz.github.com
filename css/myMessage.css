@@ -5,7 +5,9 @@
 
 /*第四页*/
 .page4{
-	background:green;
+	background:url(../img/bg4.jpg) no-repeat;
+	background-size:100% 100%;
+	font-family:"Microsoft YaHei"
 }
 
 .page4-wrapper{
@@ -20,13 +22,72 @@
 	text-align:center;
 	font-size:36px;
 	padding:30px 0;
+	text-shadow:0px 0px 20px yellow,0px 0px 30px yellow,0px 0px 40px yellow,0px 0px 50px yellow,0px 0px 60px yellow,0px 0px 70px yellow,0px 0px 80px yellow;
 }
 
 .page4 .title{
 	font-size:18px;
 	text-align:left;
 }
+/*提交框*/
 
+
+.page4 .updata-wrapper{
+	padding:0 150px;
+	margin:20px 0;
+	
+	
+}
+.page4 .updata{
+	
+	width:862px;
+	background:#9F6;
+	height:200px;
+	padding:30px;
+	position:relative;
+	border-radius:30px;
+}
+
+.page4 .updata .content{
+	width:798px;
+	height:140px;
+	padding:10px 30px;
+	resize:none;
+	font-size:24px;
+}
+.page4 .updata .updata-send{
+	width:200px;
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	right:60px;
+	bottom:25px;
+	
+}
+.page4 .updata .updata-send .send{
+	width:80px;
+	height:30px;
+	display:block;
+	background:red;
+	border-radius:50px;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.page4 .updata .updata-send span{
+	font-size:16px;
+}
+
+.page4 .updata .updata-send span .kb{
+	font-style:normal;
+	font-weight:900;
+}
+
+
+
+
+/*内容*/
 
 
 .page4 .content ul li{
@@ -34,6 +95,7 @@
 	padding:20px 0px;
 	position:relative;
 	background:url(../img/suiicon.jpg) repeat-y 50px 0;
+	font-size:18px;
 }
 
 .page4 .content ul li.hide{
@@ -87,7 +149,15 @@
 	padding:10px;
 	border-radius:10px;
 	position:relative;
+	overflow:auto;
 }
+
+.page4 .content ul li .next p{
+	
+}
+
+
+
 
 .page4 .content ul li .next .data-timer{
 	position:absolute;
@@ -144,6 +214,9 @@
 
 }
 
+
+
+
 .page4 .fixed-aside ul li.icon-weixin img{
 	position:absolute;
 	width:130px;
@@ -169,6 +242,12 @@
 	line-height:50px;
 
 }
+
+
+#oTmp{
+	display:none;
+}
+
 
 
 .page4 .content .loadedContent{

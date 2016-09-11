@@ -1,5 +1,5 @@
 // JavaScript Document
-
+snow();
 $(function(){
 	
 	//作品划入效果

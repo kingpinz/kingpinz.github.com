@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="icont/iconfont.css">
 </head>
 <body class="body">
+<script src="js/snow.js"></script>
+<canvas id="canvas" style="position:fixed; top:0px;left:-1px;z-index:80;pointer-events:none;" height="800"></canvas>
 <!--第四页-->
 <!--个人日志-->
 <div class="page4">
@@ -15,47 +17,37 @@
 	<h2>随笔</h2>
     <script></script>
     <!--轮播图-->
-<!--    <div class="banner">
+	<div class="updata-wrapper">
+    <div class="updata">
+    	<div class="write">
+        	 <textarea class="content" id="oTmp-content" placeholder="请留言。。。。"></textarea>
+       </div>
+       <div class="updata-send clearfix">
+       		<span class="fl">能写<i class="kb" id="kb">500</i>字</span>
+       		<input type="button" value="发言" class="send fr" id="send">
+       </div>
     	
     </div>
--->    
+    
+    
+    
+    
+    </div>    
 	
     <div class="content" id="content">
-    	<ul>
-        	<li class="clearfix content-first">
+    	<ul id="contentUl">
+        	<li class="clearfix content-first hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui1.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
-                    	内容
-                        <span  class="data-timer">2016年9月5日</span>
+                    	
+                        <span  class="data-timer"></span>
                     </p>
                 </div>
             </li>
-        	<li class="clearfix">
-            	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
-                </div>
-                <div class="next fl">
-                	<p>
-                    	内容
-                        <span  class="data-timer">2016年9月5日</span>
-                    </p>
-                </div>
-            </li>
-        	<li class="clearfix">
-            	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
-                </div>
-                <div class="next fl">
-                	<p>
-                    	内容
-                        <span  class="data-timer">2016年9月5日</span>
-                    </p>
-                </div>
-            </li>
-        	<li class="clearfix">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui1.jpg"/>
                 </div>
@@ -72,7 +64,18 @@
                 </div>
                 <div class="next fl">
                 	<p>
-                    	隐藏的内容
+                    	内容
+                        <span  class="data-timer">2016年9月5日</span>
+                    </p>
+                </div>
+            </li>
+        	<li class="clearfix hide">
+            	<div class="prev fl">
+                	<img alt="头像" src="img/sui1.jpg"/>
+                </div>
+                <div class="next fl">
+                	<p>
+                    	内容
                         <span  class="data-timer">2016年9月5日</span>
                     </p>
                 </div>
@@ -129,6 +132,28 @@
                 	<p>
                     	隐藏的内容
                         <span  class="data-timer">2016年9月5日</span>
+                    </p>
+                </div>
+            </li>
+        	<li class="clearfix hide">
+            	<div class="prev fl">
+                	<img alt="头像" src="img/sui1.jpg"/>
+                </div>
+                <div class="next fl">
+                	<p>
+                    	隐藏的内容
+                        <span  class="data-timer">2016年9月5日</span>
+                    </p>
+                </div>
+            </li>
+        	<li class="clearfix" id="oTmp">
+            	<div class="prev fl">
+                	<img alt="头像" src="img/sui1.jpg"/>
+                </div>
+                <div class="next fl">
+                	<p>
+                    	{{content}}
+                        <span  class="data-timer">{{time}}</span>
                     </p>
                 </div>
             </li>
@@ -148,8 +173,8 @@
         	<li class="QQ">
                 <a href="javascript:;" class="iconfont icon-qq"></a>
             </li>
-        	<li class="iconfont icon-weixin">
-            	<img alt="二维码" src=""/>
+        	<li class="iconfont icon-weixin" id="weixin">
+            	<img alt="二维码" src="img/erweima.png" id="erweima"/>
             </li>
         </ul>
     </div>

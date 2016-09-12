@@ -227,15 +227,14 @@
 .page3 .content .manContent ul li{
 	margin-left:40px;
 	line-height:40px;
-	font-size:24px;
-	font-weight:bold;
-	text-indent:2em;
-	margin-top:50px;
+	
 }
 /*个人简历的内容*/
 .page3 .content .manContent ul li#part1{
 	height:40px;
 	width:400px;
+
+	
 }
 
 .page3 .content .manContent ul li label{
@@ -336,7 +335,12 @@
 
 /*后面三段的内容*/
 
-
+.page3 .content .part2 li{
+	font-size:24px;
+	font-weight:bold;
+	text-indent:2em;
+	margin-top:50px;
+}
 
 /*.page3 .content .part2 li{
 	color:rgba(0,0,0,0); 

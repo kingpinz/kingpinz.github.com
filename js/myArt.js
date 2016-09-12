@@ -1,5 +1,19 @@
 // JavaScript Document
-snow();
+	snow();
+
+	//音乐
+	$.fn.music=function(){
+		var oA=new Audio();
+		
+		oA.src='mp3/铃儿响叮当(英文版)_黑鸭子.mp3';
+		
+		oA.play();
+	};
+
+
+
+
+
 $(function(){
 	
 	//作品划入效果
@@ -29,7 +43,9 @@ $(function(){
 			},2000)
 			
 		})
-	
+		
+		
+		$(window).music();
 	})()
 	
 	

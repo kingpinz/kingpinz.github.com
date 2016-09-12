@@ -152,7 +152,14 @@
             $(window).on('scroll',lazyLoad);
         };
 		
-				
+	//音乐
+	$.fn.music=function(){
+		var oA=new Audio();
+		
+		oA.src='mp3/铃儿响叮当(英文版)_黑鸭子.mp3';
+		
+		oA.play();
+	};
 		//执行框架			
         $(function(){
             $('#content li').lazyLoad();
@@ -186,6 +193,7 @@
 						},30);	
 					}
 			})
+			$(window).music();
 			$('#weixin').movetoggle($('#erweima'))();
 			
 			

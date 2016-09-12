@@ -196,7 +196,14 @@ $.fn.word=function(){
 	
 }
 
-
+	//音乐
+	$.fn.music=function(){
+		var oA=new Audio();
+		
+		oA.src='mp3/铃儿响叮当(英文版)_黑鸭子.mp3';
+		
+		oA.play();
+	};
 
 $(function(){
 	//炮弹事件	
@@ -240,7 +247,7 @@ $(function(){
 
 	//$('#manContentUl .part2 li').word();
 	
-	
+	$(window).music();
 })
 
 

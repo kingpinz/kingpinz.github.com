@@ -89,7 +89,12 @@
 		return str1+'<br/>'+str2;
 	
 	}*/
-	//
+
+
+
+
+
+
 (function(){
 	var aSpan=document.querySelectorAll('#clock span');
 	
@@ -119,10 +124,22 @@
 
 
 
+	//音乐
+	$.fn.music=function(){
+		var oA=new Audio();
+		
+		oA.src='mp3/铃儿响叮当(英文版)_黑鸭子.mp3';
+		
+		oA.play();
+	};
 
 
 
-
+$(function(){
+	
+	
+	$(window).music();
+})
 
 
 

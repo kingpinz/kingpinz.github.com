@@ -20,8 +20,8 @@
 	<div class="header">
     	<h2>个人简历</h2>
         <div class="nav">
-            <ul class="left-list clearfix" >
-                <li class="on">
+            <ul class="left-list clearfix" id="nav-left-list">
+                <li>
                     <a href="index.html">
                         首页
                     </a>
@@ -31,7 +31,7 @@
                         我的作品
                     </a>
                 </li>
-                <li>
+                <li class="on">
                     <a href="myIntroduce.html">
                         个人简历
                     </a>
@@ -41,76 +41,92 @@
                         随笔
                     </a>
                 </li>
+                <li class="li-shadow" id="shadow" >
             </ul>
         </div>
     </div>
     <div class="content-wrapper">
 	<div class="content" id="content">
-    	<ul class="list">
+    	<ul class="snowman">
         	<li class="part part1">
-            	<img alt="snowman" src="img/snow.jpg" />
+            	<img alt="snowman" src="img/snowman12.png"/>
                 <div class="title">基本信息</div>
-                <div class="manContent ">
-                    <h3>基本信息</h3>
-                    <ul class="left-list" contenteditable="true">
-                        <li><i></i><label>姓名</label><span>张立明</span></li>
-                        <li><i></i><label>学历</label><span>本科</span></li>
-                        <li><i></i><label>专业</label><span>工商管理</span></li>
-                        <li><i></i><label>学校职务</label><span>工商管理专业负责人</span></li>
-                        <li><i></i><label>学位</label><span>工商管理学士学位</span></li>
-                        <li><i></i><label>电话</label><span>13681654795</span></li>
-                        <li><i></i><label>邮箱</label><span>kingpinz@126.com</span></li>
-                        <li><i></i><label>个人期望</label><span>web前端工作</span></li>
-                        <li><i></i><label>个人评价</label><span>自学能力超强 责任心 </span></li>
-                        <li><i></i><label>爱好</label><span>等等</span></li>
-                    </ul>
-                </div>
             </li>
         	<li class="part2 part">
-            	<img alt="snowman" src="img/snow.jpg"  />
+            	<img alt="snowman" src="img/snowman7.png" />
                 <div class="title">HTML+CSS</div>
-                <div class="manContent ">
-                    <h3>HTML+CSS</h3>
-                    <ul class="part-ul">
-                        <li>数来年掌握什么</li>
-                        <li>数来年掌握什么</li>
-                        <li>数来年掌握什么</li>
-                        <li>数来年掌握什么</li>
-                    </ul>
-                </div>
             </li>
         	<li class="part3 part">
-            	<img alt="snowman" src="img/snow.jpg"  />
+            	<img alt="snowman" src="img/snowman4.png" />
                 <div class="title">JavaScript</div>
-                <div class="manContent ">
-                    <h3>JavaScript</h3>
-                    <ul class="part-ul">
-                        <li>数来年掌握什么</li>
-                        <li>数来年掌握什么</li>
-                        <li>数来年掌握什么</li>
-                        <li>数来年掌握什么</li>
-                    </ul>
-                </div>
             </li>
         	<li class="part4 part">
-            	<img alt="snowman" src="img/snow.jpg"  />
+            	<img alt="snowman" src="img/snowman1.png"  />
                 <div class="title">前端框架/工具软件</div>
-                <div class="manContent ">
-                    <h3>前端框架/工具软件</h3>
-                    <ul class="part-ul">
-                        <li>数来年掌握什么</li>
-                        <li>数来年掌握什么</li>
-                        <li>数来年掌握什么</li>
-                        <li>数来年掌握什么</li>
-                    </ul>
-                </div>
             </li>
         
         </ul>
-    	<div class="cannon">
-        	<img alt="cannon" src="img/cannon7.png"/>
+        <div class="manContentUl" id="manContentUl">
+                <div class="manContent " id="part1" >
+                    <h3>基本信息</h3>
+                    <div class="clearfix manContent-wrapper">
+                        <ul class="left-list fl" contenteditable="true">
+                            <li><i></i><label>姓名</label><span>张立明</span></li>
+                            <li><i></i><label>学历</label><span>本科</span></li>
+                            <li><i></i><label>专业</label><span>工商管理</span></li>
+                            <li><i></i><label>学校职务</label><span>工商管理专业负责人</span></li>
+                            <li><i></i><label>学位</label><span>工商管理学士学位</span></li>
+                            <li><i></i><label>电话</label><span>13681654795</span></li>
+                            <li><i></i><label>邮箱</label><span>kingpinz@126.com</span></li>
+                            <li><i></i><label>个人期望</label><span>web前端工作</span></li>
+                            <li><i></i><label>个人评价</label><span>自学能力超强 责任心 </span></li>
+                            <li><i></i><label>爱好</label><span>等等</span></li>
+                        </ul>
+                        <div class="game fl">
+                   			<ul id="ul" class="clearfix"></ul>
+                            <div class="gametitle" id="gametitle">
+                            	
+                                <p class="p2">钢铁硬汉</p>
+                                <p class="p3"><strong>内德维德</strong></p>
+                                
+                                <p class="p1">拼图小游戏<span>点击图片进入</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="manContent part2"  >
+                    <h3>HTML+CSS</h3>
+                    <ul class="part-ul">
+                        <li>深刻理解Web标准,熟练运用html标签,熟悉xml及xhtml标记语言,掌握html5如SVG,localstorage新特性。
+                        </li>
+                        <li>熟练运用css及css3新属性，注重浏览器兼容性，熟悉常见的css hack（兼容至IE8），掌握bootstrap框架及源码的实现，掌握css预编译器Less及Sass
+                        </li>
+                    </ul>
+                </div>
+                <div class="manContent part2">
+                    <h3>JavaScript</h3>
+                    <ul class="part-ul">
+                        <li>掌握jQuery， 掌握原生JS的编程，注重JavaScript性能优化，正在学习ES6
+                        </li>
+                        <li>熟练运用angularJS处理移动端的模块开发，模块组件化，了解双绑的背后实现，熟练的指令编写
+                       	</li>
+                    </ul>
+                </div>
+                <div class="manContent part2">
+                    <h3>前端框架/工具软件</h3>
+                    <ul class="part-ul">
+                        <li>熟练掌握dreamwrea,webstorm,运用bootstrop，zepto,anglayejs,</li>
+                    </ul>
+                </div>
+                <div class="back" id="back">
+                	<span class="backfont">返回</span>
+                </div>
         </div>
-    
+        <div id="snowball"></div>
+    	<div class="cannon" id="cannon">
+        	
+        </div>
+   		
     </div>
     </div>
     <!--<div class="clearfix">

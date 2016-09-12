@@ -12,7 +12,7 @@
 			
 			function show(){
 				clearTimeout(timer);
-				oT.css({'display':'block'}).stop().animate({'opacity':1},1000);alert(1);
+				oT.css({'display':'block'}).stop().animate({'opacity':1},1000);
 			}
 			function hide(){
 				timer=setTimeout(function(){

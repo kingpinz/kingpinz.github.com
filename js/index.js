@@ -1,5 +1,6 @@
 
 	snow();
+	//$(window).resize(snow);
 	//头部 nav移动效果
 	(function(){
 			var oUl=document.getElementById('nav-left-list');

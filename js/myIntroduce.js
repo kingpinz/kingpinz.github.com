@@ -16,7 +16,7 @@
 */		
 //下雪
 	snow();
-
+	$(window).resize(snow);
 	/*
 //设置圆形位置
 function setPart(obj,ang,r,oDiv){
@@ -206,6 +206,9 @@ $.fn.word=function(){
 	};
 
 $(function(){
+	var timer=null;
+	
+	
 	//炮弹事件	
 
 	$('#content').find('.part').on('click',function(ev){

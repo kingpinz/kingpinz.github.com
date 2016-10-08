@@ -1,13 +1,14 @@
 var snow=function(){
-//canvas init
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+//oC init
+var oC = document.getElementById("canvas");
+var gd = oC.getContext("2d");
 
-//canvas dimensions
+//oC dimensions
 var W = window.innerWidth;
 var H = window.innerHeight;
-canvas.width = W;
-canvas.height = H;
+var timer=null;
+oC.width = W;
+oC.height = H;
 
 //snowflake particles
 var mp = 300; //max particles
@@ -25,18 +26,18 @@ for(var i = 0; i < mp; i++)
 //Lets draw the flakes
 function draw()
 	{
-		ctx.clearRect(0, 0, W, H);
+		gd.clearRect(0, 0, W, H);
 		
-		ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
-		/* ctx.fillStyle = "#FF0000";*/
-		ctx.beginPath();
+		gd.fillStyle = "rgba(255, 255, 255, 0.8)";
+		/* gd.fillStyle = "#FF0000";*/
+		gd.beginPath();
 		for(var i = 0; i < mp; i++)
 		{
 			var p = particles[i];
-			ctx.moveTo(p.x, p.y);
-			ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
+			gd.moveTo(p.x, p.y);
+			gd.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
 		}
-		ctx.fill();
+		gd.fill();
 		update();
 }
 
@@ -55,6 +56,8 @@ function update()
 		//Lets make it more random by adding in the radius
 		p.y += Math.cos(angle+p.d) + 1 + p.r/2;
 		p.x += Math.sin(angle) * 2;
+		console.log(p.y)
+		console.log(p.x)
 		
 		//Sending flakes back from the top when it exits
 		//Lets make it a bit more organic and let flakes enter from the left and right also.
@@ -83,7 +86,7 @@ function update()
 	}
 	
 	//animation loop
-
+	clearInterval(timer);
 	timer=setInterval(draw, 100);
 	
 }

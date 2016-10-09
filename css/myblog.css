@@ -26,6 +26,26 @@
 .page1 .header-wrapper{
 	border-radius:10px;
 	background:#ffc;
+	position:relative;
+}
+.page1 .header-wrapper .piano{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	overflow:hidden;
+}
+
+.page1 .header-wrapper .piano li{
+	height:300px; 
+	width:12.5%; 
+	float:left;
+	font-size:100px;
+	font-weight:bold;
+	text-align:center;
+	color:#f60;
+	line-height:300px;
+	opacity:0;
 }
 
 .page1 .header{
@@ -201,13 +221,48 @@
 
 /*banner*/
 
-/*banner 的左侧 轮播图*/
+.page1 #banner{
+	width:700px;
+	height:400px; 
+	margin: 0 auto; 
+	background:url(../img/team1.png);
+	background-size:100%;
+}
+
+.page1 #banner div{
+	float: left;
+	background:url(../img/team0.png);
+}
 
 
-/*banner 的左侧 轮播图 主页面*/
-
-/*banner 的右侧 显示框*/
-
+/*runrole*/
+@keyframes run{
+		to{
+			transform:translateX(-600px);		
+		}
+}
+.page1 .runrole{
+	width:602px;
+	border:1px solid red; 
+	overflow:hidden;
+	padding:0px;
+}
+.page1 .runrole ul{ 
+	width:200%;
+	animation:run 7s linear infinite;
+}
+.page1 .runrole ul li{
+	width:130px; 
+	float:left; 
+	margin:10px;
+}
+.page1 .runrole ul li img{ 
+	width:100%;
+}
+	
+.page1 .runrole:hover ul{
+	animation-play-state:paused;
+}
 
 /*尾部*/
 .page1 .footer{
@@ -216,446 +271,21 @@
 	border-radius:10px 10px 0 0;
 	margin-top:10px;
 	line-height:30px;
+	overflow:hidden;
+}
+
+
+@keyframes footer{
+		to{
+			transform:translateX(-550px);		
+		}
+}
+.page1 .footer .footerbar{
+	width:200%;
+	animation:footer 8s linear infinite;
 }
 .page1 .footer p{
-	text-align:center;
-}
-
-/*我的作品*/
-.page2{
-}
-
-.page2 .wrapper{
-	margin:20px 130px 0 100px;
-
-}
-
-.page2 .left{
-	width:19%;
-	height:600px;
-	background:#f90;
-}
-
-.page2 .left .header-wrapper{
-	margin:20px auto;
-	width:130px;
-	height:130px;
-	overflow:hidden;
-	border:10px solid #F00;
-	border-radius:50%;
-}
-
-.page2 .left .header img{
-	display:block;
-	width:100%;
-	height:100%;
-}
-
-.page2 .left .left-topbar{
-	text-align:center;
-	
-}
-
-.page2 .left .left-topbar li{
-	margin-bottom:10px;
-	font-size:16px;
-}
-
-.page2 .left .left-topbar li.name{
-	font-size:24px;
-	font-weight:bold;
-}
-
-
-.page2 .left .left-bottombar{
-	margin:10px 20px 0px;
-	border-top:1px solid #fff;
-	padding-top:20px; 
-}
-.page2 .left .left-bottombar p{
-	font-size:14px;
-	color:#fff;
-	text-indent:2em;
-	line-height:20px;
-	margin-bottom:10px;
-}
-
-
-.page2 .right{
-	width:80%;
-	height:600px;
-	background:#BBBAF5;
-}
-.page2 .right h3{
-	margin:20px 0;
-	margin-left:100px;
-	display:block;
-	font-size:30px;
-	color:#F00;
-	font-weight:bold;
-}
-
-.page2 .right .bottombar{
-	margin:0px 60px 0px;
-	padding-top:30px;
-	border-top:1px solid #fff;
-
-}
-.page2 .right .bottombar ul{
-	overflow:auto;
-	height:400px;
-}
-
-.page2 .right .bottombar ul li{
+	width:350px;
+	margin-left:200px;
 	float:left;
-	margin-bottom:80px;
-	margin-right:20px;
-	width:320px;
-	height:400px;
-	position:relative;
-	
-	
 }
-.page2 .right .bottombar ul li:nth-child(2n){
-	margin-right:0px;
-}
-
-.page2 .right .bottombar ul li a{
-	display:block;
-	width:100%;
-	height:100%;
-}
-
-.page2 .right .bottombar ul li a img{
-
-	height:100%;
-	width:100%;
-
-}
-
-.page2 .right .bottombar ul li .work{
-	width:320px;
-	height:400px;
-	position:absolute;
-	top:0px;
-	left:0px;
-	background:rgba(0,0,0,0.8);
-
-	
-}
-.page2 .right .bottombar ul li .work a{
-	display:block;
-	width:320px;
-	height:400px;
-	border:1px solid #ccc;
-	text-align:center;
-	color:#fff;
-	font-size:14px;
-}
-
-.page2 .right .bottombar ul li .work a h4{
-	margin-top:150px;
-	font-size:30px;
-	margin-bottom:20px;}
-
-/*侧边栏*/
-
-.page2 .asidebar{
-
-	width:90px;
-	height:460px;
-	background:red;
-	position:fixed;	
-	top:60px;
-	right:30px;
-	border-radius:40px;
-}
-
-.page2 .asidebar ul li{
-	width:80px;
-	height:80px;
-	border-radius:50px;
-	background:#3F0;
-	margin:10px 5px;
-	text-align:center;
-	line-height:80px;
-	font-size:16px;
-	font-weight:bold;
-	
-}
-
-
-
-
-/*第三页*/
-
-.page3{
-	background:url(../img/page3-bg.jpg);
-	font-size:16px;
-	font-family:"Microsoft YaHei";
-}
-.page3-wrapper{
-	padding:30px 150px 0px;
-	margin:0 auto;
-}
-
-.page3 h2{
-	text-align:center;
-	font-size:50px;
-	line-height:60px;
-	padding-bottom:30px;
-
-}
-/*左侧*/
-.page3 .left{
-	width:35%;	
-}
-
-.page3 .left h3{
-	text-align:center;
-	font-size:22px;
-	border-bottom:2px solid #FB8664;
-	padding-bottom:20px;
-}
-
-.page3 .left .left-list{
-	margin:10px 10px 0px 0px;
-}
-
-.page3 .left .left-list li{
-	border-bottom:1px solid #999;
-	line-height:40px;
-}
-
-.page3 .left .left-list li label{
-	width:130px;
-	display:inline-block;
-}
-
-
-/*右侧*/
-.page3 .right{
-	margin-left:50px;
-	width:60%;
-}
-.page3 .right h3{
-	width:400px;
-	text-align:center;
-	font-size:22px;
-	border-bottom:2px solid #FB8664;
-	padding-bottom:20px;
-	margin:0 auto;
-}
-
-
-.page3 .right .part1{
-	width:100%;
-	height:112px;
-	position:relative;
-	text-align:center;
-
-}
-
-.page3 .right .part1 .part-p{
-	font-size:40px;
-	color:#000;
-	line-height:112px;
-}
-.page3 .right .part1 .part-ul{
-	position:absolute;
-	top:10px;
-	left:250px;
-	opacity:0;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*第四页*/
-.page4{
-	background:green;
-}
-
-.page4-wrapper{
-	padding:10px 100px;
-	margin:0 auto;
-}
-
-
-
-.page4 h2{
-	text-align:center;
-	font-size:36px;
-}
-
-.page4 .title{
-	font-size:18px;
-	text-align:left;
-}
-
-
-
-.page4 .content ul li{
-	height:100px;
-	padding:20px 0px;
-	position:relative;
-	background:url(../img/suiicon.jpg) repeat-y 50px 0;
-}
-
-.page4 .content ul li.hide{
-	display:none;
-}
-
-
-.page4 .content ul li.content-first{
-	padding-top:0px;
-}
-
-.page4 .content ul li .prev{
-	border-radius:50%;
-	width:100px;
-	height:100px;
-	overflow:hidden;
-	position:relative;
-	
-}
-
-.page4 .content ul li:before{
-	content:"";
-	display:block;
-	border-width: 0px 0px 20px 28px;
-	border-color:transparent transparent transparent #fff;
-	border-style:solid;
-	position:absolute;
-	left:90px;
-	top:40px;
-}
-.page4 .content ul li:after{
-	content:"";
-	display:block;
-	border-radius:50%;
-	position:absolute;
-	width:10px;
-	height:10px;
-	background:#ccc;
-	left:130px;
-	top:30px;
-	border:2px solid #fff;
-}
-
-
-
-.page4 .content ul li .next{
-	background:#ccc;
-	width:900px;
-	height:80px;
-	margin-left:50px;
-	padding:10px;
-	border-radius:10px;
-	position:relative;
-}
-
-.page4 .content ul li .next .data-timer{
-	position:absolute;
-	bottom:10px;
-	right:20px;
-	border:1px solid #000;
-	background:#F60;
-	border-radius:3px;
-}
-
-
-
-.page4 .fixed-aside{
-	position:fixed;
-	right:20px;
-	bottom:100px;
-	width:50px;
-	height:220px;
-
-}
-
-.page4 .fixed-aside ul li{
-	width:50px;
-	height:50px;
-	background:#ccc;
-	margin-bottom:10px;
-
-}
-
-.page4 .fixed-aside ul li.returnTop{
-	opacity:0;	
-}
-
-
-.page4 .fixed-aside ul li.returnTop a{
-	width:100%;
-	height:100%;
-	display:block;
-	font-size:24px
-}
-
-.page4 .fixed-aside ul li.icon-weixin{
-
-	color:green;
-	font-size:40px;
-}
-
-.page4 .fixed-aside ul li.icon-weixin{
-	color:green;
-	font-size:40px;
-	text-align:center;
-	line-height:50px;
-	position:relative;
-
-}
-
-.page4 .fixed-aside ul li.icon-weixin img{
-	position:absolute;
-	width:130px;
-	height:130px;
-	top:-80px;
-	left:-150px;
-	background:red;
-	display:none;
-}
-
-
-.page4 .fixed-aside ul li.QQ a.icon-qq{
-	display:block;
-	text-align:center;
-	line-height:50px;
-	color:blue;
-	font-size:40px;
-
-}
-.page4 .fixed-aside ul li.returnTop a.icon-zhiding3{
-	font-size:30px;
-	text-align:center;
-	line-height:50px;
-
-}
-
-
-.page4 .content .loadedContent{
-	text-align:center;
-	font-size:24px;
-	opacity:0;
-}
-
-
-
-
-
-
-
-
-
-

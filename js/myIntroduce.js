@@ -1,59 +1,24 @@
-// JavaScript Document
-	/*		 var mySwiper = new Swiper ('.swiper-container',{
-			spaceBetween: 20,
-			//pagination: '.swiper-pagination',
-			paginationClickable: false, //允许点击
-			nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-			autoplay:3000,
-			autoplayDisableOnInteraction:false,
-			loop:true,
-			//keyboardControl: true,
-			effect: 'cube',
-			direction: 'vertical'
-			
-		}) 
-*/		
+var timer=null;
 //下雪
-	snow();
-	$(window).resize(snow);
-	/*
-//设置圆形位置
-function setPart(obj,ang,r,oDiv){
-	var a = Math.sin(a2r(ang)) * r;
-	var b = Math.cos(a2r(ang)) * r;
-	obj.style.left = oDiv.offsetLeft + r + a + 'px';
-	obj.style.top = oDiv.offsetTop + r - b + 'px';
-}
-//角转狐
-function a2r(n){//角转弧
-	return n*Math.PI/180;
-}
-
-//
-
-$.fn.setPart=function(){
-	var aDiv=this;
-	var r=$('#content').height()/2;
-	
-	for(var i=0;i<aDiv.length;i++){
-		
-		setPart(aDiv[i],i*120/(aDiv.length-1)-60,400,$('#content')[0])
-	}
-	
-};
-
-*/
+snow();
+$(window).resize(snow);
 
 //炮 的旋转插件
-
-	$.fn.rotate=function(ev){
-	var x1=ev.clientX;//到content事件的左上角的距离
-	var y1=ev.clientY;//到content事件的左上角的距离
-	var x2=590;
-	var y2=30+this.parent().height();//父级的宽度
-	var x=x2+this.parent().offset().left-x1-$(this).width()/2;//父级到边的距离
-	var y=y2+this.parent().offset().top-y1-$(this).height()/2;//父级到边的距离
+$.fn.rotate=function(ev){
+	var x1=ev.clientX;
+	
+	//到content事件的左上角的距离
+	var y1=ev.clientY;
+	//到content事件的左上角的距离
+	var x2=this.parent().width();
+	
+	var y2=this.parent().height();
+	//父级的宽度
+	var x=x2/2-(x1-this.parent().offset().left);
+	//父级到边的距离
+	var y=y2-(y1-this.parent().offset().top);
+	//console.log(this.parent());
+	//父级到边的距离
 	//alert(x1);
 	//alert(y1);
 	//alert(this.parent().offset().left);
@@ -63,15 +28,14 @@ $.fn.setPart=function(){
 	//alert(d);
 	this[0].style.transform='rotate('+d+'deg)'
 	
-	
+	//弧转角
 	function a2d(n){
 		return n/Math.PI*180;
-		
 	}
 };
-//游戏
 
-	(function(){
+//游戏
+(function(){
 	var oUl=document.getElementById('ul');
 	var aLi=oUl.children;
 	var index=0;
@@ -80,6 +44,7 @@ $.fn.setPart=function(){
 	var timer=null;
 	var arr=[];
 	var num=0;
+	
 	//创建一个数组
 	for(var i=0;i<8;i++){
 		for(var j=0;j<2;j++){
@@ -94,6 +59,7 @@ $.fn.setPart=function(){
 			})
 		return arr;
 	};
+	
 	var arr1=changearr(arr);
 	console.log(arr1);
 	//拼图组建
@@ -157,17 +123,16 @@ $.fn.setPart=function(){
 						}else{
 							//alert('点击的是同一个图片');
 							return ;
-						}				
+						}	
+						//测试得出100；			
 					},100)
 				};						
 			}
 		})(i)
 	}
-
 })()
 	
 //打字效果
-
 $.fn.word=function(){
 	
 		var $this=$(this);
@@ -192,45 +157,37 @@ $.fn.word=function(){
 				clearInterval(timer);
 			}	
 		},200);
-	
-	
 }
 
-	//音乐
-	$.fn.music=function(){
-		var oA=new Audio();
-		
-		oA.src='mp3/铃儿响叮当(英文版)_黑鸭子.mp3';
-		
-		oA.play();
-	};
+//音乐
+$.fn.music=function(){
+	var oA=new Audio();
+	
+	oA.src='mp3/铃儿响叮当(英文版)_黑鸭子.mp3';
+	
+	oA.play();
+};
 
 $(function(){
-	var timer=null;
-	
-	
 	//炮弹事件	
-
 	$('#content').find('.part').on('click',function(ev){
+		//console.log($(this));
 			var $this=$(this).index();
 			var x=ev.clientX-$(this).parent().offset().left;
 			
 			var y=ev.clientY-$(this).parent().offset().top;
 			//alert(ev.clientX)
 			//alert(ev.clientY)
-			
 			//alert(x);
 			//alert(y);
-			
 			$('#cannon').rotate(ev);
 			$('#snowball').stop().animate(
 			//$(this).offset().left点击li的坐标位置,$(this).offset().top
-				{left:x,bottom:$('#content').height()-y},
+				{left:x,bottom:$('#content').height()-y-40},
 				{
 					duration:1000,
-					//
 					complete:function(){
-						$('#snowball').css({left:588,bottom:0})
+						$('#snowball').css({left:'50.5%',bottom:0})
 						$('#manContentUl').css({'display':'block'});
 						$('#manContentUl .manContent').css({'display':'none'});
 						$('#manContentUl .manContent').eq($this).css({'display':'block'});
@@ -238,7 +195,7 @@ $(function(){
 			 })
 	})
 	
-	//返回主菜单
+	//进入个人信息后的返回主菜单
 	$('#back').on('click',function(){
 		$('#manContentUl').css({'display':'none'});
 	});
@@ -247,9 +204,8 @@ $(function(){
 	$('#gametitle').on('click',function(){
 		$(this).css({'display':'none'})
 	});
-
-	//$('#manContentUl .part2 li').word();
 	
+	//$('#manContentUl .part2 li').word();
 	$(window).music();
 })
 

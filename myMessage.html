@@ -2,14 +2,23 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>随笔</title>
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/myMessage.css">
 <link rel="stylesheet" href="icont/iconfont.css">
+
+<script src="js/snow.js"></script>
+<!--[if lte IE 9.0]>
+<style>
+.body #canvas{z-index:-1}
+</style>
+<! [endif] -->
 </head>
 <body class="body">
-<script src="js/snow.js"></script>
-<canvas id="canvas" style="position:fixed; top:0px;left:-1px;z-index:80;pointer-events:none;" height="800"></canvas>
+
+<canvas id="canvas"  height="800"></canvas>
 <!--第四页-->
 <!--个人日志-->
 <div class="page4">
@@ -31,6 +40,7 @@
     </div>    
 	
     <div class="content" id="content">
+    	
     	<ul id="contentUl">
         	<li class="clearfix content-first hide">
             	<div class="prev fl">
@@ -45,7 +55,7 @@
             </li>
         	<li class="clearfix hide">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui3.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -56,7 +66,7 @@
             </li>
         	<li class="clearfix hide">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui2.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -67,7 +77,7 @@
             </li>
         	<li class="clearfix hide">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui4.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -78,7 +88,7 @@
             </li>
         	<li class="clearfix hide">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui5.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -89,7 +99,7 @@
             </li>
         	<li class="clearfix hide">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui2.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -100,7 +110,7 @@
             </li>
         	<li class="clearfix hide">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui3.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -111,7 +121,7 @@
             </li>
         	<li class="clearfix hide">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui2.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -122,7 +132,7 @@
             </li>
         	<li class="clearfix hide">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui5.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -133,7 +143,7 @@
             </li>
         	<li class="clearfix hide">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui3.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -144,7 +154,7 @@
             </li>
         	<li class="clearfix" id="oTmp">
             	<div class="prev fl">
-                	<img alt="头像" src="img/sui1.jpg"/>
+                	<img alt="头像" src="img/sui{{num}}.jpg"/>
                 </div>
                 <div class="next fl">
                 	<p>
@@ -156,8 +166,10 @@
         
         </ul>
     	<p  class="loadedContent">已经是最后一条日志</p>
+       
     </div>
-
+	 <div class="invisible"></div>
+     <div class="snowman"></div>
 <!--侧边条-->
 	<div class="fixed-aside">
     	<ul>
@@ -175,7 +187,46 @@
         </ul>
     </div>
 <!--导航-->
-
+	<div class="train" id="train">
+    	<ul class="clearfix trainlist">
+        	<li>
+            	<img alt="trainhead" src="img/train6.png"/>
+            
+            </li>
+        	<li>
+            	<a href="index.html">
+                    <span>首页</span>
+                    <img alt="首页" src="img/train2.png">
+                </a>
+            </li>
+        	<li>
+            	<a href="myArt.html">
+                   <span>我的作品</span>
+                    <img alt="我的作品" src="img/train3.png">
+                     
+                </a>
+            </li>
+        	<li>
+            	<a href="myIntroduce.html">
+                    <span>个人简历</span>
+                    <img alt="个人简历" src="img/train4.png">
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+                    <span>随笔</span>
+                    <img alt="随笔" src="img/train5.png">
+                </a>
+            </li>
+            
+        </ul>
+        <div class="wheel wheel1"></div>
+        <div class="wheel wheel2"></div>
+        <div class="wheel wheel3"></div>
+        <div class="wheel wheel4"></div>
+        <div class="wheel wheel5"></div>
+        <div class="wheel wheel6"></div>
+    </div>
 </div>
 </div>
 <script src="js/jquery-1.10.1.min.js"></script>

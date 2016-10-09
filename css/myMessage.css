@@ -1,13 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
+.body{
+	background:url(../img/bg2.jpg) no-repeat;
+	background-size:100% 100%;
+	height:100%;
+	font-size:16px;
+	font-family:"Microsoft YaHei";
+	position:relative;
+	overflow:hidden;
+}
 
+.body #canvas{
+	position:fixed;
+	top:0px;
+	left:-1px;
+	z-index:88;
+	pointer-events:none;
+}
 
 
 /*第四页*/
 .page4{
-	background:url(../img/bg4.jpg) no-repeat;
-	background-size:100% 100%;
-	font-family:"Microsoft YaHei"
 }
 
 .page4-wrapper{
@@ -21,7 +34,7 @@
 .page4 h2{
 	text-align:center;
 	font-size:36px;
-	padding:30px 0;
+	padding:30px 0 100px;
 	text-shadow:0px 0px 20px yellow,0px 0px 30px yellow,0px 0px 40px yellow,0px 0px 50px yellow,0px 0px 60px yellow,0px 0px 70px yellow,0px 0px 80px yellow;
 }
 
@@ -85,10 +98,31 @@
 }
 
 
-
-
 /*内容*/
+.page4 .content{
 
+}
+
+/*隐形*/
+.page4 .invisible{
+	position:absolute;
+	width:250px;
+	height:300px;
+	left:5px;
+	top:184px;
+	background:url(../img/tree.gif) no-repeat;
+	background-size:100% 100%;
+	
+}
+.page4 .snowman{
+	position:absolute;
+	width:100px;
+	height:200px;
+	left:100px;
+	top:344px;
+	background:url(../img/snowman3.png) no-repeat;
+	background-size:100% 100%;
+}
 
 .page4 .content ul li{
 	height:100px;
@@ -104,7 +138,7 @@
 
 
 .page4 .content ul li.content-first{
-	padding-top:0px;
+
 }
 
 .page4 .content ul li .prev{
@@ -257,8 +291,120 @@
 }
 
 
+.page4 .back{
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+.page4 .back a{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.page4 .back a img{
+	width:100%;
+	height:100%;
+	
+}
+
+.page4 .train{
+	width:400px;
+	height:50px;
+	position:absolute;
+	left:-600px;
+	top:100px;
+}
+.page4 .train ul li{
+	width:80px;
+	height:120px;
+	float:right;
+	border-radius:50px;
+}
+
+.page4 .train ul li a{
+	width:80px;
+	height:120px;
+	display:block;
+	position:relative;
+}
+
+.page4 .train ul li a span{
+	position:absolute;
+	left:20px;
+	top:-10px;
+	color:#0F0;
+
+}
+.page4 .train ul li img{
+	width:100%;
+	height:100%;
+}
 
 
+.page4 .train .wheel{
+	background:url(../img/wheel1.png) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	top:83px;
+	left:0px;
+	animation: rotate 3s linear 0s infinite ;
+	-webkit-animation: rotate 3s linear 0s infinite ;
+	-moz-animation:rotate 3s linear 0s infinite;
+	-ms-animation: rotate 3s linear 0s infinite;
+	-o-animation: rotate 3s linear 0s infinite;
+}
 
+.page4 .train .wheel1{
+	left:20px;
+}
+.page4 .train .wheel2{
+	left:97px;
+}
+.page4 .train .wheel3{
+	left:177px;
+}
+.page4 .train .wheel4{
+	left:257px;
+}
+.page4 .train .wheel5{
+	background:url(../img/wheel2.png) no-repeat;
+	background-size:100% 100%;
+	width:45px;
+	height:45px;
+	top:77px;
+	left:317px;
+}
+.page4 .train .wheel6{
+	background:url(../img/wheel3.png) no-repeat;
+	background-size:100% 100%;
+	left:368px;
+}
+
+
+@keyframes rotate{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+@-webkit-keyframes rotate{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotate{
+	from{-moz-transform: rotate(0deg);}
+	to{-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes rotate{
+	from{-ms-transform: rotate(0deg);}
+	to{-ms-transform: rotate(360deg);}
+}
+@-o-keyframes rotate{
+	from{-o-transform: rotate(0deg);}
+	to{-o-transform: rotate(360deg);}
+}
 
 

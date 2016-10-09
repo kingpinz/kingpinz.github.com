@@ -2,87 +2,104 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>个人介绍</title>
-<link rel="stylesheet" href="css/common.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我的blog</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" >
 <link rel="stylesheet" href="css/myIntroduce.css">
 <link rel="stylesheet" href="icont/iconfont.css">
-<script src="js/snow.js"></script>
-<script src="js/jquery-1.10.1.min.js"></script>
+<link rel="stylesheet" href="css/common.css">
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 </head>
-<body class="body">
-<canvas id="canvas" style="position:fixed; top:0px;left:-1px;z-index:80;pointer-events:none;" height="800"></canvas>
+<body class="body container">
+<canvas id="canvas"></canvas>
 <!--第三页-->
-
 <!--技能 个人简历-->
 <div class="page3">
 <div class="page3-wrapper">
-	<div class="header">
+	<div class="header container">
     	<h2>个人简历</h2>
-        <div class="nav">
-            <ul class="left-list clearfix" id="nav-left-list">
-                <li>
-                    <a href="index.html">
-                        首页
-                    </a>
-                </li>
-                <li>
-                    <a href="myArt.html">
-                        我的作品
-                    </a>
-                </li>
-                <li class="on">
-                    <a href="myIntroduce.html">
-                        个人简历
-                    </a>
-                </li>
-                <li>
-                    <a href="myMessage.html">
-                        随笔
-                    </a>
-                </li>
-                <li class="li-shadow" id="shadow" >
-            </ul>
-        </div>
+       <div class="navbar nav" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header"><!--导航头部包含下面两个部分在宽度变小的情况下发生-->
+              <button type="button" class="navbar-toggle collapsed buttonnav" data-toggle="collapse" data-target="#demo-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!-- 做导航内的下拉菜单-->
+            <div class="collapse navbar-collapse" id="demo-navbar">
+                <ul class="nav navbar-nav ulnav" id="nav-left-list">
+                    <li>
+                        <a href="index.html">
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myArt.html">
+                            我的作品
+                        </a>
+                    </li>
+                    <li class="on">
+                        <a href="#">
+                            个人简历
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myMessage.html">
+                            随笔
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div> 
     </div>
-    <div class="content-wrapper">
-	<div class="content" id="content">
-    	<ul class="snowman">
-        	<li class="part part1">
+    <div class="content-wrapper container-fluid">
+	<div class="content container" id="content">
+    	<ul class="row snowman">
+        	<li class="part part1 col-md-3">
             	<img alt="snowman" src="img/snowman12.png"/>
                 <div class="title">基本信息</div>
             </li>
-        	<li class="part2 part">
+        	<li class="part2 part col-md-3">
             	<img alt="snowman" src="img/snowman7.png" />
-                <div class="title">HTML+CSS</div>
+                <div class="title">HTML/CSS</div>
             </li>
-        	<li class="part3 part">
+        	<li class="part3 part col-md-3">
             	<img alt="snowman" src="img/snowman4.png" />
-                <div class="title">JavaScript</div>
+                <div class="title">JS</div>
             </li>
-        	<li class="part4 part">
+        	<li class="part4 part col-md-3">
             	<img alt="snowman" src="img/snowman1.png"  />
-                <div class="title">前端框架/工具软件</div>
+                <div class="title">前端框架</div>
             </li>
-        
         </ul>
-        <div class="manContentUl" id="manContentUl">
-                <div class="manContent " id="part1" >
+        <div class="manContentUl container" id="manContentUl">
+                <div class="manContent container-fluid " id="part1" >
                     <h3>基本信息</h3>
-                    <div class="clearfix manContent-wrapper">
-                        <ul class="left-list fl" contenteditable="true">
-                            <li><i></i><label>姓名</label><span>张立明</span></li>
-                            <li><i></i><label>学历</label><span>本科</span></li>
-                            <li><i></i><label>专业</label><span>工商管理</span></li>
-                            <li><i></i><label>学校职务</label><span>工商管理专业负责人</span></li>
-                            <li><i></i><label>学位</label><span>工商管理学士学位</span></li>
-                            <li><i></i><label>电话</label><span>13681654795</span></li>
-                            <li><i></i><label>邮箱</label><span>kingpinz@126.com</span></li>
-                            <li><i></i><label>个人期望</label><span>web前端工作</span></li>
-                            <li><i></i><label>个人评价</label><span>自学能力超强 责任心 </span></li>
-                            <li><i></i><label>爱好</label><span>等等</span></li>
+                    <div class="row">
+                        <ul class="left-list col-md-5" contenteditable="true">
+                            <li><i class="iconfont icon-xingming10" ></i><label>姓名</label><span>张立明</span></li>
+                            <li><i class="iconfont icon-xueli2" ></i><label>学历</label><span>本科</span></li>
+                            <li><i class="iconfont icon-qizi"></i><label>专业</label><span>工商管理</span></li>
+                            <li><i class="iconfont icon-20"></i><label>学校职务</label><span>工商管理专业负责人</span></li>
+                            <li><i class="iconfont icon-xue"></i><label>学位</label><span>工商管理学士学位</span></li>
+                            <li><i class="iconfont icon-phone"></i><label>电话</label><span>13681654795</span></li>
+                            <li><i class="iconfont icon-youxiang"></i><label>邮箱</label><span>kingpinz@126.com</span></li>
+                            <li><i class="iconfont icon-qiwanggongzuo1"></i><label>个人期望</label><span>web前端工作</span></li>
+                            <li><i class="iconfont icon-xingming1"></i><label>个人评价</label><span>自学能力超强 责任心 </span></li>
+                            <li><i class="iconfont icon-wangyuanjing1"></i><label>爱好</label><span>等等</span></li>
                         </ul>
-                        <div class="game fl">
+                        
+                        <div class="game col-md-6">
                    			<ul id="ul" class="clearfix"></ul>
                             <div class="gametitle" id="gametitle">
                             	
@@ -97,25 +114,33 @@
                 <div class="manContent part2"  >
                     <h3>HTML+CSS</h3>
                     <ul class="part-ul">
-                        <li>深刻理解Web标准,熟练运用html标签,熟悉xml及xhtml标记语言,掌握html5如SVG,localstorage新特性。
+                        <li>理解W3C标准,熟练运用HTML标签,熟悉HTML标记语言,熟悉HTML5标签，熟练掌握web框架的搭建。
                         </li>
-                        <li>熟练运用css及css3新属性，注重浏览器兼容性，熟悉常见的css hack（兼容至IE8），掌握bootstrap框架及源码的实现，掌握css预编译器Less及Sass
+                        <li>熟练运用CSS及熟悉CSS3新属性，注重浏览器兼容性，熟悉常见的css hack（兼容至IE8）.
                         </li>
                     </ul>
                 </div>
                 <div class="manContent part2">
                     <h3>JavaScript</h3>
                     <ul class="part-ul">
-                        <li>掌握jQuery， 掌握原生JS的编程，注重JavaScript性能优化，正在学习ES6
+                        <li> 
+                        	掌握原生JS的编程，注重JavaScript性能优化，正在学习ES6
                         </li>
-                        <li>熟练运用angularJS处理移动端的模块开发，模块组件化，了解双绑的背后实现，熟练的指令编写
+                        <li>
+                        	了解MVC模块化
                        	</li>
                     </ul>
                 </div>
                 <div class="manContent part2">
                     <h3>前端框架/工具软件</h3>
                     <ul class="part-ul">
-                        <li>熟练掌握dreamwrea,webstorm,运用bootstrop，zepto,anglayejs,</li>
+                        <li>熟练掌握Dreamwrea，了解Sublime和WebStorm工具。
+                        	了解PHP后端开发语言。
+                        	了解bootsrap、angular、vue、react框架、Node JS、canvas、vml、svg、raphael。
+                        </li>
+                        <li>
+                        	能利用swiper 、hammer、 iScroll 、canvas、JQueryMobile插件,利用zepto、seajs、Require.js进行模块化编程，Jsonp/Ajax进行交互，git、github、grunt、gulp压缩上传代码，通过Phonegap等工具进行打包app，开发HTML5+CSS3移动端的开发。
+                        </li>
                     </ul>
                 </div>
                 <div class="back" id="back">
@@ -124,125 +149,14 @@
         </div>
         <div id="snowball"></div>
     	<div class="cannon" id="cannon">
-        	
         </div>
-   		
     </div>
     </div>
-    <!--<div class="clearfix">
-    <div class="left fl">
-    	<h3>基本信息</h3>
-    	<ul class="left-list" contenteditable="true">
-        	<li><i></i><label>姓名</label><span>张立明</span></li>
-        	<li><i></i><label>学历</label><span>本科</span></li>
-        	<li><i></i><label>专业</label><span>工商管理</span></li>
-        	<li><i></i><label>学校职务</label><span>工商管理专业负责人</span></li>
-        	<li><i></i><label>学位</label><span>工商管理学士学位</span></li>
-        	<li><i></i><label>电话</label><span>13681654795</span></li>
-        	<li><i></i><label>邮箱</label><span>kingpinz@126.com</span></li>
-        	<li><i></i><label>个人期望</label><span>web前端工作</span></li>
-        	<li><i></i><label>个人评价</label><span>自学能力超强 责任心 </span></li>
-        	<li><i></i><label>爱好</label><span>等等</span></li>
-        </ul>
-    </div>
-	<div class="right fl">
-    	<h3>个人技能</h3>
-        <div class="part-wrapper">
-            <div class="swiper-container">
-                <div class="swiper-wrapper" id="swiperpart">
-                    <div class="swiper-slide" >
-                            <p class="part-p">HTML+CSS</p>
-                            <p class="part-p-shadow">HTML+CSS</p>                            
-                            <ul class="part-ul">
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                            </ul>
-                    </div>
-                    <div class="swiper-slide" >
-                        <div class="part1">
-                            <p class="part-p">JavaScript</p>
-                            <ul class="part-ul">
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                            </ul>
-                        </div>                    
-                    </div>
-                    <div class="swiper-slide" >
-                        <div class="part1">
-                            <p class="part-p">前端框架</p>
-                            <ul class="part-ul">
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                            </ul>
-                        </div>                    
-                    </div>
-                    <div class="swiper-slide" >
-                        <div class="part1">
-                            <p class="part-p">工具软件</p>
-                            <ul class="part-ul">
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                                <li>数来年掌握什么</li>
-                            </ul>
-                        </div>                    
-                    </div>
-                </div>
-                
-                <div class="swiper-pagination"></div>
-                
-                
-                左右按钮
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-        	</div>
-       </div>
-        	<div class="part1">
-            	<p class="part-p">HTML+CSS</p>
-                <ul class="part-ul">
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                </ul>
-            </div>
-        	<div class="part1">
-            	<p class="part-p">JavaScript</p>
-                <ul class="part-ul">
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                </ul>
-            </div>
-        	<div class="part1">
-            	<p class="part-p">前端框架</p>
-                <ul class="part-ul">
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                </ul>
-            </div>
-        	<div class="part1">
-            	<p class="part-p">工具软件</p>
-                <ul class="part-ul">
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                	<li>数来年掌握什么</li>
-                </ul>
-            </div>
-    </div>-->
 </div>
 </div>
-
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/snow.js"></script>
 <script src="js/myIntroduce.js"></script>
 </body>
 </html>

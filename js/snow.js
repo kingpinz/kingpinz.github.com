@@ -1,3 +1,4 @@
+
 var snow=function(){
 //oC init
 var oC = document.getElementById("canvas");
@@ -6,7 +7,7 @@ var gd = oC.getContext("2d");
 //oC dimensions
 var W = window.innerWidth;
 var H = window.innerHeight;
-var timer=null;
+
 oC.width = W;
 oC.height = H;
 
@@ -56,8 +57,7 @@ function update()
 		//Lets make it more random by adding in the radius
 		p.y += Math.cos(angle+p.d) + 1 + p.r/2;
 		p.x += Math.sin(angle) * 2;
-		console.log(p.y)
-		console.log(p.x)
+
 		
 		//Sending flakes back from the top when it exits
 		//Lets make it a bit more organic and let flakes enter from the left and right also.
@@ -84,8 +84,8 @@ function update()
 			}
 		}
 	}
-	
 	//animation loop
+	
 	clearInterval(timer);
 	timer=setInterval(draw, 100);
 	

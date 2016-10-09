@@ -1,106 +1,114 @@
 <!doctype html>
+
 <html>
+
 <head>
+
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>我的作品</title>
-<link rel="stylesheet" href="css/common.css">
+
+<link rel="stylesheet" href="css/bootstrap.min.css" >
 <link rel="stylesheet" href="css/myArt.css">
 <link rel="stylesheet" href="icont/iconfont.css">
-<script src="js/snow.js"></script>
+<link rel="stylesheet" href="css/common.css">
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
 </head>
-<body class="body">
-<canvas id="canvas" style="position:fixed; top:0px;left:-1px;z-index:80;pointer-events:none;" height="800"></canvas>
+<body class="body container">
+<canvas id="canvas"></canvas>
 
 <!--第二页-->
-<div class="page2"  >
-<!--左侧-->	
-	<div class="wrapper clearfix">
-    	<div class="left fl">
-        	<div class="header-wrapper">
-            	<div class="header">
-                	<img alt="头像" src="img/header1.jpg" />
+<div class="page2">
+	 <div class="row">
+        <div class=" col-md-2">
+            <div class="header-wrapper">
+                <div class="header" id="header">
+                    <img alt="头像2" class="imghead2" src="img/head2.jpg" />
+                    <img alt="头像1" class="imghead1" src="img/head1.jpg" /> 
                 </div>
-            </div>
+           </div>
             <div class="left-topbar">
-				<ul>
-                	<li class="name">张立明</li>
-                	<li class="profession">Web前端工程师 && 1年 </li>
-                	<li class="address">中国-上海</li>
+                <ul>
+                    <li class="name">张立明</li>
+                    <li class="profession">Web前端工程师 && 1年 </li>
+                    <li class="address">中国-上海</li>
                 </ul>
             </div> 
             <div class="left-bottombar">
-            	<p>个人工作态度端正，有良好进取心，学习能力强，可快速融入团队。</p>
+                <p>个人工作态度端正，有良好进取心，学习能力强，可快速融入团队。</p>
                 <p>熟悉W3C标准，对表现与数据分离、Web语义化等有深刻理解。深入理解JavaScript面向对象原理、熟悉MVC的设计模式。理解AJAX运作机制，熟练掌握JQuery等主流JS框架。能够熟练应用HTML / CSS / JavaScript 技术，开发符合W3C标准的网站前端页面。
                                     
                 </p>
             </div>
         </div>
-        <div class="right-wrapper">
-        <div class="right fr">
-        	<h3>我的作品</h3>
-        	<div class="bottombar">
-            	<ul class="clearfix" id="bottombar-art">
-                	<li class="bottombar-art">
-                    	<a href="javascript:;" class="bottom-img">
-                        	<img alt="作品" src="img/Artmi.png"/>
+        <div class=" col-md-10">
+            <h3>我的作品</h3>
+            <div class="bottombar">
+                <ul class="clearfix" id="bottombar-art">
+                    <li class="bottombar-art">
+                        <a href="javascript:;" class="bottom-img">
+                            <img alt="作品" src="img/Artmi.png"/>
                         </a>
-                    	<div class="work">
-                        	<a href="Art1mi/xiaomi.html">
-                            	<h4>仿小米官网首页</h4>
-                            	<span>原生js html+css布局</span>
+                        <div class="work">
+                            <a href="Art1mi/xiaomi.html">
+                                <h4>仿小米官网首页</h4>
+                                <span>原生js html+css布局</span>
                             </a>
                         </div>
                     </li>
-                	<li>
-                    	<a href="javascript:;" class="bottom-img">
-                        	<img alt="作品" src="img/Artyouku.png"/>
+                    <li>
+                        <a href="javascript:;" class="bottom-img">
+                            <img alt="作品" src="img/Artyouku.png"/>
                         </a>
-                    	<div class="work">
-                        	<a href="Art2youku/youku.html">
-                            	<h4>仿优酷首页</h4>
-                            	<span>css3+HTML5布局</span>
+                        <div class="work">
+                            <a href="Art2youku/youku.html">
+                                <h4>仿优酷首页</h4>
+                                <span>css+HTML静态页面布局</span>
                             </a>
                         </div>
                     </li>
-                	<li>
-                    	<a href="javascript:;" class="bottom-img">
-                        	<img alt="作品" src="img/Artju.png"/>
+                    <li>
+                        <a href="javascript:;" class="bottom-img">
+                            <img alt="作品" src="img/Artju.png"/>
                         </a>
-                    	<div class="work">
-                        	<a href="Art4juphone/juphone.html">
-                            	<h4>仿聚划算移动端首页</h4>
-                            	<span>rem布局</span>
+                        <div class="work">
+                            <a href="Art4juphone/juphone.html">
+                                <h4>仿聚划算移动端首页</h4>
+                                <span>rem布局</span>
                             </a>
                         </div>
                     </li>
-                	<li>
-                    	<a href="javascript:;" class="bottom-img">
-                        	<img alt="作品" src="img/Artjingdong.png"/>
+                    <li>
+                        <a href="javascript:;" class="bottom-img">
+                            <img alt="作品" src="img/Artjingdong.png"/>
                         </a>
-                    	<div class="work">
-                        	<a href="Art3jing/jingphone.html">
-                            	<h4>仿京东移动端首页</h4>
-                            	<span>流体布局</span>
+                        <div class="work">
+                            <a href="Art3jing/jingphone.html">
+                                <h4>仿京东移动端首页</h4>
+                                <span>流体布局</span>
                             </a>
                         </div>
                     </li>
                 </ul>
             </div>
-        
         </div>
-        </div>
-    </div>
+   	</div>
     
     <div class="asidebar" id="asidebar">
         <ul>
             <li>
                 <a href="index.html">
-                    <i></i>
+                    <i ></i>
                     首页
                 </a>
             </li>
             <li>
-                <a href="myArt.html">
+                <a href="#">
                     <i></i>
                     我的作品
                 </a>
@@ -113,7 +121,7 @@
             </li>
             <li>
                 <a href="myMessage.html">
-                    <i></i>
+                    <i ></i>
                     留言
                 </a>
             </li>
@@ -121,6 +129,8 @@
     </div>
 </div>
 <script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/snow.js"></script>
 <script src="js/myArt.js"></script>
 
 </body>

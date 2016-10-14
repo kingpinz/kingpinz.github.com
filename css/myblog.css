@@ -173,7 +173,9 @@
 
 
 /*nav导航	*/
-
+.page1 .navbar{
+	margin-top:50px;	
+}
 .page1 .navbar .nav-btn{
 	background:#0CF;
 }
@@ -197,6 +199,7 @@
 
 /*banner*/
 .banner{
+	margin-top:40px;
 }
 .banner .carousel-inner img{
 	width:100%;
@@ -225,7 +228,8 @@
 
 */
 /*runrole*/
-@keyframes run{
+
+@-webkit-keyframes run{
 		to{
 			transform:translateX(-50%);		
 		}
@@ -235,6 +239,7 @@
 	border:1px solid red; 
 	overflow:hidden;
 	padding:0px;
+	margin-top:50px;
 }
 .page1 .runrole ul{ 
 	width:200%;
@@ -263,7 +268,7 @@
 }
 
 
-@keyframes footer{
+@-webkit-keyframes footer{
 		to{
 			transform:translateX(-50%);		
 		}
@@ -278,7 +283,7 @@
 	animation:footer 8s linear infinite;
 }
 .page1 .footer p{
-	width:12.5%;
-	margin-left:12.5%;
+	width:20%;
+	margin-left:5%;
 	float:left;
 }

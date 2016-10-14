@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>我的blog</title>
 
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+<title>我的blog</title>
 <link rel="stylesheet" href="css/bootstrap.min.css" >
 <link rel="stylesheet" href="css/myblog.css">
 <link rel="stylesheet" href="icont/iconfont.css">
 <link rel="stylesheet" href="css/common.css">
+<script src="js/fontchange.js"></script>
 <!--[if lt IE 9]>
   <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -65,27 +66,89 @@
     </div>
 
     <!--nav 导航条-->
-        <div class="navbar" role="navigation">
+        <nav class="navbar " role="navigation">
           <div class="container-fluid">
-              <ul class="nav navbar-nav" id="nav-left-list" >
+          
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed nav-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav " id="nav-left-list" >
                 <li class="on"><a href="index.html">首页</a></li>
                 <li><a href="myArt.html">我的作品</a></li>
                 <li><a href="myIntroduce.html">个人简历</a></li>
                 <li><a href="myMessage.html">随笔</a></li>
                 <li class="li-shadow" id="shadow" >
               </ul>
-          </div>
-        </div>
-    <!--banner自动显示10秒钟自动关闭 左边做打字效果 写感言 右边写个人的介绍-->
-
-        <div class="container">
-        	<div id="banner">
             </div>
-        </div>
+          </div>
+        </nav>    
+    
+    <!--banner自动显示10秒钟自动关闭 左边做打字效果 写感言 右边写个人的介绍-->
+  <!--轮播图-->
+        <div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel">
+          <!-- Indicators 小点 -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
         
+          <!-- Wrapper for slides  内容-->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/team1.png" alt="team">
+              <div class="carousel-caption">
+                兄弟们的情义，让梦想飞翔！
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/team2.png" alt="team">
+              <div class="carousel-caption">
+                最初的美好，需永远回忆！
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/team3.png" alt="team">
+              <div class="carousel-caption">
+                同舟共济，勇往直前！
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/team4.png" alt="team">
+              <div class="carousel-caption">
+                运动无极限，友谊共长天！
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/team5.png" alt="team">
+              <div class="carousel-caption">
+               	让笔墨飞扬，书写职场的友谊！
+              </div>
+            </div>
+          </div>
+        
+          <!-- Controls  左右控制-->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>        
 <!--  无缝滚动     -->   
         <div class="runrole container">
-            <ul class="runlist">
+            <ul class="runlist clearfix">
                 <li><img src="img/dog (1).jpg" /></li>
                 <li><img src="img/dog (2).jpg" /></li>
                 <li><img src="img/dog (3).jpg" /></li>
@@ -101,7 +164,7 @@
         
     <!--尾部-->      
         <div class="footer row">
-            <div class="footerbar">
+            <div class="footerbar clearfix">
                 <p>
                     <span>Design by：<strong>张立明</strong></span>
                     <span>备案号：<strong>黑ICP2141110020号</strong></span>

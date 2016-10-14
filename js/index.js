@@ -57,7 +57,7 @@ snow();
 		$('#banner-left-content li').eq(now).stop().animate({opacity:1},1000)
 	},4000);
 }	*/
-var banner=function(){
+/*var banner=function(){
 	(function(){
 		var oDiv=document.getElementById('banner');
 		var aBox=oDiv.children;
@@ -66,7 +66,7 @@ var banner=function(){
 		var now=0;
 		var w=oDiv.offsetWidth;
 		var h=oDiv.offsetHeight;
-		//console.log(h,w);
+		console.log(h,w);
 		//开关
 		var ready=true;
 		//分块	确定每一块的w/h/backgroundPostion
@@ -74,9 +74,11 @@ var banner=function(){
 			for(var c=0;c<col;c++){
 				var oBox=document.createElement('div');
 				oBox.style.width=w/col+'px';
+				
 				oBox.style.height=h/row+'px';
 				oDiv.appendChild(oBox);
 				oBox.style.backgroundPosition=-oBox.offsetWidth*c+'px '+ -oBox.offsetHeight*r +'px';
+				console.log(oBox.offsetWidth*c)
 			}
 		}
 		//给一堆小盒子(oBox)做分步运动
@@ -110,7 +112,7 @@ var banner=function(){
 		},5000)
 		
 	})()	
-}
+}*/
 
 
 //头部 时钟的效果
@@ -182,7 +184,6 @@ $(function(){
 	$(window).music();
 	$(window).clock();
 	$(window).piano();
-	banner();
 })
 
 

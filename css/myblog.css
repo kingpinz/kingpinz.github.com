@@ -8,7 +8,7 @@
 	font-family:"宋体";
 	margin-top:20px;
 	margin-bottom:20px;
-	min-width:600px;
+	height:100%;
 }
 .body #canvas{
 	position:fixed;
@@ -19,6 +19,7 @@
 }
 <!--主页-->
 .page1{
+	overflow:hidden;
 }
 
 /*头部*/
@@ -173,60 +174,49 @@
 
 
 /*nav导航	*/
-.page1 .navbar{
-	position:relative;
+
+.page1 .navbar .nav-btn{
+	background:#0CF;
 }
+
+.page1 .navbar .nav-btn .icon-bar{
+	background:#FFF;
+}
+.page1 .navbar li a{
+	text-align:center;
+	color:#CF6;
+	font-size:20px;
+	font-weight:bold;
+	background:#0CF;
+}
+
 
 .page1 .navbar li:hover a{
-	background-color:transparent;
+	border-radius:15px;
+	background-color:#F63;
 }
-/*左边*/
-
-.page1 .navbar ul{
-	width:528px;
-	height:60px;
-	position:relative;
-}
-
-.page1 .navbar ul li{
-	float:left;
-}
-
-
-.page1 .navbar ul li a{
-	width:130px;
-	height:60px;
-	display:block;
-	color:#000;
-	text-align:center;
-	padding-top:0;
-	line-height:60px;
-	font-size:18px;
-	border-radius:10px;
-	font-weight:200;
-	
-}
-.page1 .navbar ul li.li-shadow{
-	width:130px;
-	height:60px;
-	background:#f15694;	
-	border-radius:10px;
-	opacity:0.5;
-	position:absolute;
-	left:0px;
-	top:0px;
-	z-index:-1;
-}
-
 
 /*banner*/
+.banner{
+}
+.banner .carousel-inner img{
+	width:100%;
+}
 
-.page1 #banner{
-	width:700px;
+.banner .carousel-inner .carousel-caption{
+	font-size:.7rem;
+	color:#FC0;
+	top:.8rem;
+	left:5%;
+	right:5%;
+}
+
+/*.page1 #banner{
+	width:60%;
 	height:400px; 
 	margin: 0 auto; 
 	background:url(../img/team1.png);
-	background-size:100%;
+	background-size:100% 100%;
 }
 
 .page1 #banner div{
@@ -234,7 +224,7 @@
 	background:url(../img/team0.png);
 }
 
-
+*/
 /*runrole*/
 @keyframes run{
 		to{

@@ -8,7 +8,6 @@
 	font-family:"宋体";
 	margin-top:20px;
 	margin-bottom:20px;
-	height:100%;
 }
 .body #canvas{
 	position:fixed;
@@ -228,23 +227,22 @@
 /*runrole*/
 @keyframes run{
 		to{
-			transform:translateX(-600px);		
+			transform:translateX(-50%);		
 		}
 }
 .page1 .runrole{
-	width:602px;
+	width:80%;
 	border:1px solid red; 
 	overflow:hidden;
 	padding:0px;
 }
 .page1 .runrole ul{ 
 	width:200%;
-	animation:run 7s linear infinite;
+	animation:run 10s linear infinite;
 }
 .page1 .runrole ul li{
-	width:130px; 
+	width:12.5%; 
 	float:left; 
-	margin:10px;
 }
 .page1 .runrole ul li img{ 
 	width:100%;
@@ -267,15 +265,20 @@
 
 @keyframes footer{
 		to{
-			transform:translateX(-550px);		
+			transform:translateX(-50%);		
 		}
 }
+
+.page1 .footer{
+	width:100%;
+}
+
 .page1 .footer .footerbar{
 	width:200%;
 	animation:footer 8s linear infinite;
 }
 .page1 .footer p{
-	width:350px;
-	margin-left:200px;
+	width:12.5%;
+	margin-left:12.5%;
 	float:left;
 }

@@ -1,5 +1,5 @@
 var timer=null;
-snow();
+
 
 //头部 nav移动效果
 (function(){
@@ -177,12 +177,14 @@ $.fn.piano=function(){
 			}
 		}
 }
-
+$(document).ready(function() {
+    snow();
+	$.fn.music();
+	$.fn.clock();
+});
 //自适应屏幕
 $(function(){
 	$(window).resize(snow);
-	$(window).music();
-	$(window).clock();
 	$(window).piano();
 })
 

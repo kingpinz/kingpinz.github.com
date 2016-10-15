@@ -45,9 +45,6 @@ snow();
 		$(this).children().css({background:'red'})
 		
 	})
-	
-	
-	
 })()
 
 
@@ -59,7 +56,9 @@ $.fn.music=function(){
 	
 	oA.play();
 };
-
+$(document).ready(function(e) {
+    $(window).resize(snow);
+});
 $(function(){
 	//音乐
 	$(window).music();

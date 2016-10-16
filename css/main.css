@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+
+.body{
+	background:url(../img/bg2.jpg) no-repeat;
+	background-size:100% 100%;
+	height:100%;
+	font-size:16px;
+	font-family:"Microsoft YaHei";
+	position:relative;
+	overflow:hidden;
+}
+
+.body #canvas{
+	position:fixed;
+	top:0px;
+	left:-1px;
+	z-index:88;
+	pointer-events:none;
+}
+
+.header .h1{
+	text-align:center;
+	color:#3F3;
+}
+.contented{
+	padding:0px;
+}
+
+.contented .content .contentUl{
+}
+
+
+.contented .content ul li{
+	width:100%;
+	height:100px;
+	padding:10px 0px;
+	margin-bottom:10px;
+	position:relative;
+	background:url(../img/suiicon.jpg) repeat-y 50px 0;
+	font-size:18px;
+	opacity:0;
+}
+
+.contented .content ul li .prev{
+	border-radius:50%;
+	width:8.5%;
+	overflow:hidden;
+	position:relative;
+	margin-right:5%;
+}
+
+.contented .content ul li.info:before{
+	content:"";
+	display:block;
+	border-width: 0px 0px 20px 28px;
+	border-color:transparent transparent transparent #fff;
+	border-style:solid;
+	position:absolute;
+	left:90px;
+	top:40px;
+}
+.contented .content ul li.info:after{
+	content:"";
+	display:block;
+	border-radius:50%;
+	position:absolute;
+	width:10px;
+	height:10px;
+	background:#ccc;
+	left:130px;
+	top:30px;
+	border:2px solid #fff;
+}
+
+.contented .content ul li .next{
+	background:#ccc;
+	width:80%;
+	height:100px;
+	padding:10px;
+	border-radius:10px;
+	position:relative;
+	overflow:auto;
+}
+
+.contented .content ul li .next .data-timer{
+	position:absolute;
+	bottom:10px;
+	right:20px;
+	border:1px solid #000;
+	background:#F60;
+	border-radius:3px;
+}
+
+.fixed-aside{
+	position:fixed;
+	right:20px;
+	bottom:100px;
+	width:50px;
+	height:220px;
+
+}
+
+.fixed-aside ul li{
+	width:50px;
+	height:50px;
+	background:#ccc;
+	margin-bottom:10px;
+
+}
+
+.fixed-aside ul li.returnTop{
+	opacity:0;
+}
+
+
+.fixed-aside ul li.returnTop a{
+	width:100%;
+	height:100%;
+	display:block;
+	font-size:24px
+}
+
+.fixed-aside ul li.icon-weixin{
+
+	color:green;
+	font-size:40px;
+}
+
+.fixed-aside ul li.icon-weixin{
+	color:green;
+	font-size:40px;
+	text-align:center;
+	line-height:50px;
+	position:relative;
+
+}
+
+.fixed-aside ul li.icon-weixin img{
+	position:absolute;
+	width:130px;
+	height:130px;
+	top:-80px;
+	left:-150px;
+	background:red;
+	display:none;
+}
+
+
+.fixed-aside ul li.QQ a.icon-qq{
+	display:block;
+	text-align:center;
+	line-height:50px;
+	color:blue;
+	font-size:40px;
+
+}
+.fixed-aside ul li.returnTop a.icon-zhiding3{
+	font-size:30px;
+	text-align:center;
+	line-height:50px;
+
+}
+
+#oTmp{
+	display:none;
+}
+
+.contented .content .loadedContent{
+	text-align:center;
+	font-size:24px;
+	opacity:0;
+}
+
+
+.page4 .back{
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+.page4 .back a{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.page4 .back a img{
+	width:100%;
+	height:100%;
+}
+
+@keyframes rotate{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+@-webkit-keyframes rotate{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotate{
+	from{-moz-transform: rotate(0deg);}
+	to{-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes rotate{
+	from{-ms-transform: rotate(0deg);}
+	to{-ms-transform: rotate(360deg);}
+}
+@-o-keyframes rotate{
+	from{-o-transform: rotate(0deg);}
+	to{-o-transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

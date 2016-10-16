@@ -133,14 +133,15 @@ $.fn.fastLoad=function(){
 
 		var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
 		var scrollBottom=document.documentElement.clientHeight+scrollTop;
-
+		var screenHeight=document.documentElement.clientHeight;
+		
 		aLi.each(function(index){
 			//liT
 			var liT=150;
 			
 			if(scrollTop>=liT){
 				
-				$(this).stop().animate({'opacity':1},300);
+				$(this).animate({'opacity':1},300);
 			}else{
 				$(this).stop().animate({'opacity':0},300);
 			}
@@ -168,9 +169,41 @@ $.fn.train=function(){
 	}})	
 };
 
+$.fn.screen=function(){
+		var client = {
+		  versions: function() {
+			var u = navigator.userAgent;
+			return {
+			  ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端  
+			  android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器  
+			}
+		  }()
+		}
+		
+		//get value 
+		
+		if (client.versions.ios) {
+		  console.log("ios");
+		  $('#contentUl li').each(function(index, element) {
+            	$(this).removeClass('info');
+				alert(2)
+        	});
+		} else if (client.versions.android) {
+		  console.log("andriod");
+		  $('#contentUl li').each(function(index, element) {
+            	$(this).removeClass('info');
+				alert(1);
+        	});
+		} else {
+		  console.log("不是移动设备");
+		}
+}
+
+
 //执行框架			
 $(function(){
-	$('#content li').lazyLoad();
+	$(window).screen();
+	$('#contentUl li').lazyLoad();
 	$('.loadedContent').lazyLoad();
 	$('#returnTop').fastLoad();
 	$('#send').sendMessage();
@@ -201,9 +234,9 @@ $(function(){
 				},30);	
 			}
 	})
-	$(window).music();
+	//$(window).music();
 	$('#weixin').movetoggle($('#erweima'));
-	$('#train').train();
+	//$('#train').train();
 });
 
 	

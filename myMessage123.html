@@ -1,62 +1,48 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <!--引入 Bootstrap -->
-    <link rel="stylesheet" href="css/common.css"/>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link  href="css/main.css"rel="stylesheet">
-    <link rel="stylesheet" href="icont/iconfont.css">
-    <!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>随笔</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/myMessage.css">
+<link rel="stylesheet" href="icont/iconfont.css">
+
+<script src="js/snow.js"></script>
+<!--[if lte IE 9.0]>
+<style>
+.body #canvas{z-index:-1}
+</style>
+<! [endif] -->
 </head>
 <body class="body">
 
-		<canvas id="canvas"  height="800"></canvas>  
-<div class="header container">
-  
-        <h1 class="h1">随笔</h1>
-        <div class="navbar navbar-default navbar-inverse" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                </div>
-                
-                <div class="collapse navbar-collapse" id="demo-navbar">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">首页</a></li>
-                    <li><a href="myArt.html">我的作品</a></li>
-                    <li><a href="myIntroduce.html">个人简历</a></li>
-                    <li><a href="myMessage.html">随笔</a></li>
-                  </ul>
-                </div>
-            </div>
-     	</div>
-</div>
-<div class="contented container">
-    <div class="container">
-        <div class="text" style="background:#0F3; padding:3rem; border-radius:1.25rem">
-            <textarea  style="width:100%; height:10rem; padding:0.5rem; font-size:1.5rem; resize:none; overflow:hidden" placeholder="请输入您说的话" id="oTmp-content"></textarea>
-            <div class=" navbar navbar-right" style="margin:0px;">
-                <span>能写<i class="kb" id="kb">500</i>字</span>
-                <button class=" btn" style="background:red; color:#fff; font-size:1rem; " id="send">发言</button>
-            </div>
-        </div>
+<canvas id="canvas"  height="800"></canvas>
+<!--第四页-->
+<!--个人日志-->
+<div class="page4">
+<div class="page4-wrapper">
+	<h2>随笔</h2>
+    <script></script>
+    <!--轮播图-->
+	<div class="updata-wrapper">
+    <div class="updata">
+    	<div class="write">
+        	 <textarea class="content" id="oTmp-content" placeholder="请留言。。。。"></textarea>
+       </div>
+       <div class="updata-send clearfix">
+       		<span class="fl">能写<i class="kb" id="kb">500</i>字</span>
+       		<input type="button" value="发言" class="send fr" id="send">
+       </div>
+    	
     </div>
-    
-    <div class="container content" id="content">
-    	<ul id="contentUl" class="contentUl">
-        	<li class="clearfix content-first info">
+    </div>    
+	
+    <div class="content" id="content">
+    	
+    	<ul id="contentUl">
+        	<li class="clearfix content-first hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui1.jpg"/>
                 </div>
@@ -67,7 +53,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui3.jpg"/>
                 </div>
@@ -78,7 +64,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui2.jpg"/>
                 </div>
@@ -89,7 +75,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui4.jpg"/>
                 </div>
@@ -100,7 +86,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui5.jpg"/>
                 </div>
@@ -111,7 +97,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui2.jpg"/>
                 </div>
@@ -122,7 +108,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui3.jpg"/>
                 </div>
@@ -133,7 +119,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui2.jpg"/>
                 </div>
@@ -144,7 +130,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui5.jpg"/>
                 </div>
@@ -155,7 +141,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info">
+        	<li class="clearfix hide">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui3.jpg"/>
                 </div>
@@ -166,7 +152,7 @@
                     </p>
                 </div>
             </li>
-        	<li class="clearfix info" id="oTmp">
+        	<li class="clearfix" id="oTmp">
             	<div class="prev fl">
                 	<img alt="头像" src="img/sui{{num}}.jpg"/>
                 </div>
@@ -180,31 +166,86 @@
         
         </ul>
     	<p  class="loadedContent">已经是最后一条日志</p>
+       
+    </div>
+	 <div class="invisible"></div>
+     <div class="snowman"></div>
+<!--侧边条-->
+	<div class="fixed-aside">
+    	<ul>
+        	<li class="returnTop" id="returnTop">
+            	<a href="javascript:;" class="iconfont icon-zhiding3" >
+                
+                </a>
+            </li>
+        	<li class="QQ">
+                <a href="javascript:;" class="iconfont icon-qq"></a>
+            </li>
+        	<li class="iconfont icon-weixin" id="weixin">
+            	<img alt="二维码" src="img/erweima.png" id="erweima"/>
+            </li>
+        </ul>
+    </div>
+<!--导航-->
+	<div class="train" id="train">
+    	<ul class="clearfix trainlist">
+        	<li>
+            	<img alt="trainhead" src="img/train6.png"/>
+            
+            </li>
+        	<li>
+            	<a href="index.html">
+                    <span>首页</span>
+                    <img alt="首页" src="img/train2.png">
+                </a>
+            </li>
+        	<li>
+            	<a href="myArt.html">
+                   <span>我的作品</span>
+                    <img alt="我的作品" src="img/train3.png">
+                     
+                </a>
+            </li>
+        	<li>
+            	<a href="myIntroduce.html">
+                    <span>个人简历</span>
+                    <img alt="个人简历" src="img/train4.png">
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+                    <span>随笔</span>
+                    <img alt="随笔" src="img/train5.png">
+                </a>
+            </li>
+            
+        </ul>
+        <div class="wheel wheel1"></div>
+        <div class="wheel wheel2"></div>
+        <div class="wheel wheel3"></div>
+        <div class="wheel wheel4"></div>
+        <div class="wheel wheel5"></div>
+        <div class="wheel wheel6"></div>
     </div>
 </div>
-
-<!--侧边条-->
-<div class="fixed-aside">
-    <ul>
-        <li class="returnTop" id="returnTop">
-            <a href="javascript:;" class="iconfont icon-zhiding3" >
-            
-            </a>
-        </li>
-        <li class="QQ">
-            <a href="javascript:;" class="iconfont icon-qq"></a>
-        </li>
-        <li class="iconfont icon-weixin" id="weixin">
-            <img alt="二维码" src="img/erweima.png" id="erweima"/>
-        </li>
-    </ul>
 </div>
-   	<!--    把js放在这里--> 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.10.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/snow.js"></script>
-    <script src="js/myMessage.js"></script>
-  </body>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/myMessage.js"></script>    
+</body>
 </html>
+
+
+
+
+
+<!--首页 作品展示 个人日志 关于张立明 留言板
+-->
+
+
+
+
+
+
+
+
+
